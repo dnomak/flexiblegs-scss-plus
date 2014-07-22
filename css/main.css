@@ -1,0 +1,35 @@
+/*! Main.css */
+
+/* Your Style */
+
+/* iPad (Landscape) */
+
+  @media (max-width: 1024px) {
+
+    /* Your Style */
+
+  }
+
+/* iPad (Portrait) */
+
+  @media (max-width: 768px) {
+
+    /* Your Style */
+
+  }
+
+/* iPhone (Landscape) */
+
+  @media (max-width: 568px) {
+
+    /* Your Style */
+
+  }
+
+/* iPhone (Portrait) */
+
+  @media (max-width: 320px) {
+
+    /* Your Style */
+
+  }
