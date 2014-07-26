@@ -1,9 +1,6 @@
 #flexible.gs
 
-###Flexible Grid System · [flexible.gs](http://flexible.gs)
-
-5 of different size 2 to 24 Column Grid.
-
+Flexible Grid System · [flexible.gs](http://flexible.gs)
 
 ###Install
 
@@ -92,16 +89,15 @@ Example code snippet · [View example page](http://flexible.gs/example.html)
 ##Browser Support
 
 #####Desktop Browsers
-- Safari (6+)
-- Chrome (19+)
+- Safari (6.1+)
+- Chrome (26+)
 - Firefox (16+)
 - Opera (15+)
 - IE (9+)
 
 #####Mobile Browsers
-- iOS Safari (6+)
+- iOS Safari (7+)
 - Android Browser (4.4+)
-- Blackberry Browser (10+)
 - Opera Mobile (22+)
 - Chrome for Android (35+)
 - Firefox for Android (30+)
