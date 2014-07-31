@@ -1,0 +1,15 @@
+{
+  "name": "flexible.gs",
+  "version": "1.0.1",
+  "homepage": "https://github.com/dnomak/flexible.gs",
+  "authors": [
+    "Doğukan Güven NOMAK"
+  ],
+  "main": "css/flexible.min.css",
+  "keywords": [
+    "css",
+    "grid",
+    "responsive"
+  ],
+  "license": "MIT"
+}
