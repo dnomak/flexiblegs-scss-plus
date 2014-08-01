@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "homepage": "https://github.com/dnomak/flexible.gs",
   "authors": [
-    "Doğukan Güven NOMAK"
+    "Doğukan Güven NOMAK <me@dnomak.com>"
   ],
   "main": "css/flexible.min.css",
   "keywords": [
