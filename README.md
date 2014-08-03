@@ -4,7 +4,7 @@ Flexible Grid System · [flexible.gs](http://flexible.gs)
 
 ###Install
 
-```
+```html
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +16,7 @@ Flexible Grid System · [flexible.gs](http://flexible.gs)
 ##Usage
 
 Equalize the number of each grid line.
-```
+```html
 <div class="row">
   ...
 </div>
@@ -29,17 +29,17 @@ i = xl-push     i = lg-push     i = md-push     i = sm-push     i = xs-push
 i = xl-pull     i = lg-pull     i = md-pull     i = sm-pull     i = xs-pull
 i = xl-space    i = lg-space    i = md-space    i = sm-space    i = xs-space
 
-    xl-push-0       lg-push-0       md-push-0       sm-push-0       xs-push-0
-    xl-push-1       lg-push-1       md-push-1       sm-push-1       xs-push-1
+    push-xl-0       push-lg-0       push-md-0       push-sm-0       push-xs-0
+    push-xl-1       push-lg-1       push-md-1       push-sm-1       push-xs-1
 
-    xl-pull-0       lg-pull-0       md-pull-0       sm-pull-0       xs-pull-0
-    xl-pull-1       lg-pull-1       md-pull-1       sm-pull-1       xs-pull-1
+    pull-xl-0       pull-lg-0       pull-md-0       pull-sm-0       pull-xs-0
+    pull-xl-1       pull-lg-1       pull-md-1       pull-sm-1       pull-xs-1
 
-    xl-space-0      lg-space-0      md-space-0      sm-space-0      xs-space-0
-    xl-space-1      lg-space-1      md-space-1      sm-space-1      xs-space-1
+    space-xl-0      space-lg-0      space-md-0      space-sm-0      space-xs-0
+    space-xl-1      space-lg-1      space-md-1      space-sm-1      space-xs-1
 
-    xl-visible      lg-visible      md-visible      sm-visible      xs-visible
-    xl-hidden       lg-hidden       md-hidden       sm-hidden       xs-hidden
+    visible-xl      visible-lg      visible-md      visible-sm      visible-xs
+    hidden-xl       hidden-lg       hidden-md       hidden-sm       hidden-xs
 
 i-1
 i-2-1
@@ -69,18 +69,18 @@ i-24-1 i-24-2 i-24-3 i-24-4 i-24-5 i-24-6 i-24-7 i-24-8 i-24-9 i-24-10 i-24-11 i
 ```
 
 Example code snippet · [View example page](http://flexible.gs/example.html)
-```
+```html
 <div class="row">
-  <div class="xl-24-6 lg-space-0 lg-12-3 md-space-8-1 md-8-6 sm-space-12-3 sm-12-6 xs-1"></div>
+  <div class="xl-24-6 space-lg-0 lg-12-3 space-md-8-1 md-8-6 space-sm-12-3 sm-12-6 xs-1"></div>
   <div class="xl-24-18 lg-12-9 md-1 sm-1 xs-1"></div>
   <div class="xl-1 lg-1 md-1 sm-1 xs-1"></div>
-  <div class="xl-push-0 xl-10-3 lg-push-12-9 lg-12-3 md-2-1 sm-12-6 xs-1"></div>
-  <div class="xl-pull-0 xl-10-7 lg-pull-12-3 lg-12-9 md-2-1 sm-12-6 xs-1"></div>
-  <div class="xl-visible xl-5-1 lg-visible lg-12-4 md-visible md-2-1 sm-visible sm-12-4 xs-visible xs-1"></div>
-  <div class="xl-visible xl-5-1 lg-visible lg-12-4 md-visible md-2-1 sm-visible sm-12-4 xs-visible xs-1"></div>
-  <div class="xl-visible xl-5-1 lg-visible lg-12-4 md-visible md-2-1 sm-visible sm-12-4 xs-visible xs-1"></div>
-  <div class="xl-visible xl-5-1 lg-visible lg-12-6 md-visible md-2-1 sm-hidden xs-visible xs-1"></div>
-  <div class="xl-visible xl-5-1 lg-visible lg-12-6 md-visible md-2-2 sm-hidden xs-visible xs-1"></div>
+  <div class="push-xl-0 xl-10-3 push-lg-12-9 lg-12-3 md-2-1 sm-12-6 xs-1"></div>
+  <div class="pull-xl-0 xl-10-7 pull-lg-12-3 lg-12-9 md-2-1 sm-12-6 xs-1"></div>
+  <div class="visible-xl xl-5-1 visible-lg lg-12-4 visible-md md-2-1 visible-sm sm-12-4 visible-xs xs-1"></div>
+  <div class="visible-xl xl-5-1 visible-lg lg-12-4 visible-md md-2-1 visible-sm sm-12-4 visible-xs xs-1"></div>
+  <div class="visible-xl xl-5-1 visible-lg lg-12-4 visible-md md-2-1 visible-sm sm-12-4 visible-xs xs-1"></div>
+  <div class="visible-xl xl-5-1 visible-lg lg-12-6 visible-md md-2-1 hidden-sm visible-xs xs-1"></div>
+  <div class="visible-xl xl-5-1 visible-lg lg-12-6 visible-md md-2-2 hidden-sm visible-xs xs-1"></div>
   <div class="xl-22-11 lg-20-10 md-18-9 sm-1 xs-1"></div>
   <div class="xl-22-11 lg-20-10 md-18-9 sm-1 xs-1"></div>
 </div>
@@ -89,19 +89,20 @@ Example code snippet · [View example page](http://flexible.gs/example.html)
 ##Browser Support
 
 #####Desktop Browsers
-- Safari (6.1+)
-- Chrome (26+)
-- Firefox (16+)
-- Opera (15+)
-- IE (9+)
+- Safari
+- Chrome
+- Firefox
+- Opera
+- IE (7+)
 
 #####Mobile Browsers
-- iOS Safari (7+)
-- Android Browser (4.4+)
-- Opera Mobile (22+)
-- Chrome for Android (35+)
-- Firefox for Android (30+)
-- IE Mobile (10+)
+- iOS Safari
+- Opera Mini
+- Android Browser
+- Opera Mobile
+- Chrome for Android
+- Firefox for Android
+- IE Mobile
 
 ##Feedback
 If you find bugs please open a ticket at [https://github.com/dnomak/flexible.gs/issues](https://github.com/dnomak/flexible.gs/issues)
