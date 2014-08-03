@@ -25,9 +25,9 @@ Equalize the number of each grid line.
 All variations of class names.
 ```
 i = xl          i = lg          i = md          i = sm          i = xs
-i = xl-push     i = lg-push     i = md-push     i = sm-push     i = xs-push
-i = xl-pull     i = lg-pull     i = md-pull     i = sm-pull     i = xs-pull
-i = xl-space    i = lg-space    i = md-space    i = sm-space    i = xs-space
+i = push-xl     i = push-lg     i = push-md     i = push-sm     i = push-xs
+i = pull-xl     i = pull-lg     i = pull-md     i = pull-sm     i = pull-xs
+i = space-xl    i = space-lg    i = space-md    i = space-sm    i = space-xs
 
     push-xl-0       push-lg-0       push-md-0       push-sm-0       push-xs-0
     push-xl-1       push-lg-1       push-md-1       push-sm-1       push-xs-1
