@@ -105,7 +105,7 @@ Example code snippet · [View example page](http://flexible.gs/example.html)
 - IE Mobile
 
 ##Feedback
-If you find bugs please open a ticket at [https://github.com/dnomak/flexible.gs/issues](https://github.com/dnomak/flexible.gs/issues)
+If you find bugs please open a ticket at [https://github.com/flexiblegs/flexible.gs/issues](https://github.com/flexiblegs/flexible.gs/issues)
 
 ##License
 Flexible Grid System is licensed under the MIT license [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)
