@@ -1,0 +1,41 @@
+/*! flexible.main.css */
+
+/* wrapper */
+
+  [class*="xl-"],[class*="lg-"],[class*="md-"],[class*="sm-"],[class*="xs-"] {
+    font-size: 12px;
+  }
+
+/* your style */
+
+/* lg */
+
+  @media (max-width: 1024px) {
+
+    /* your style */
+
+  }
+
+/* md */
+
+  @media (max-width: 768px) {
+
+    /* your style */
+
+  }
+
+/* sm */
+
+  @media (max-width: 568px) {
+
+    /* your style */
+
+  }
+
+/* xs */
+
+  @media (max-width: 320px) {
+
+    /* your style */
+
+  }
