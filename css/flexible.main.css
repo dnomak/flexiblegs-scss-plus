@@ -1,41 +1,43 @@
 /*! flexible.main.css */
 
-/* wrapper */
+/* Wrapper */
 
   [class*="xl-"],[class*="lg-"],[class*="md-"],[class*="sm-"],[class*="xs-"] {
     font-size: 12px;
   }
 
-/* your style */
+/* Your Style */
 
-/* lg */
+/* Responsive */
 
-  @media (max-width: 1024px) {
+  /* lg */
 
-    /* your style */
+    @media (max-width: 1024px) {
 
-  }
+      /* Your Style */
 
-/* md */
+    }
 
-  @media (max-width: 768px) {
+  /* md */
 
-    /* your style */
+    @media (max-width: 768px) {
 
-  }
+      /* Your Style */
 
-/* sm */
+    }
 
-  @media (max-width: 568px) {
+  /* sm */
 
-    /* your style */
+    @media (max-width: 568px) {
 
-  }
+      /* Your Style */
 
-/* xs */
+    }
 
-  @media (max-width: 320px) {
+  /* xs */
 
-    /* your style */
+    @media (max-width: 320px) {
 
-  }
+      /* Your Style */
+
+    }
