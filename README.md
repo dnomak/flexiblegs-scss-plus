@@ -9,7 +9,7 @@ Flexible Grid System is a Responsive CSS Framework · [flexible.gs](http://flexi
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/flexible.min.css">
-  <link rel="stylesheet" href="css/flexible.main.css">
+  <link rel="stylesheet" href="css/flexible.style.css">
 </head>
 ```
 
