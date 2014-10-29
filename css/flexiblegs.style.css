@@ -2,7 +2,7 @@
 
 /* Wrapper */
 
-  [class*="xl-"],[class*="lg-"],[class*="md-"],[class*="sm-"],[class*="xs-"] {
+  .row > * {
     font-size: 12px;
   }
 
