@@ -1,4 +1,4 @@
-﻿/*! Flexible Grid System 2.2.1 | MIT License | flexible.gs */
+﻿/*! Flexible Grid System 2.3.0 | MIT License | flexible.gs */
 
 /* xl · lg · md · sm · xs */
 /* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 · Pixel Grid Gutter (Right and Left)*/
@@ -17,11 +17,11 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  .row {
+  .wrap {
     font-size: 0;
     text-align: center;
   }
-  .row > * {
+  .wrap > * {
     position: relative;
     min-height: 1px;
     vertical-align: top;
@@ -840,7 +840,7 @@
 
 /* sm */
 
-  @media (min-width: 321px) {
+  @media (min-width: 415px) {
     .left-sm {
       text-align:left;
     }
@@ -1656,7 +1656,7 @@
 
 /* md */
 
-  @media (min-width: 569px) {
+  @media (min-width: 668px) {
     .left-md {
       text-align:left;
     }

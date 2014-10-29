@@ -1,20 +1,20 @@
 /*! flexiblegs.style.css */
 
-/* Wrapper */
+/* wrapper */
 
-  .row > * {
+  .wrap > * {
     font-size: 12px;
   }
 
-/* Your Style */
+/* your style */
 
-/* Responsive */
+/* responsive */
 
   /* lg */
 
     @media (max-width: 1024px) {
 
-      /* Your Style */
+      /* your style */
 
     }
 
@@ -22,22 +22,22 @@
 
     @media (max-width: 768px) {
 
-      /* Your Style */
+      /* your style */
 
     }
 
   /* sm */
 
-    @media (max-width: 568px) {
+    @media (max-width: 667px) {
 
-      /* Your Style */
+      /* your style */
 
     }
 
   /* xs */
 
-    @media (max-width: 320px) {
+    @media (max-width: 414px) {
 
-      /* Your Style */
+      /* your style */
 
     }
