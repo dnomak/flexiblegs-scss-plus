@@ -2,8 +2,8 @@
   "name": "Flexible Customization",
   "url": "http://flexible.gs",
   "customization": {
-    "version": "2.3.0",
-    "container-name": "wrap",
+    "version": "2.3.1",
+    "wrap-name": "wrap",
     "gutter-name": "gutter",
     "sizes": [
       {
@@ -37,7 +37,10 @@
       "center",
       "left",
       "right",
-      "hidden"
+      "hidden",
+      "first",
+      "last",
+      "reverse"
     ]
   }
 }
