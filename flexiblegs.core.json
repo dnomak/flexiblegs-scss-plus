@@ -1,6 +1,7 @@
 ﻿{
-  "version": "2.3.3",
+  "version": "2.3.4",
   "wrap-name": "wrap",
+  "flexbox-name": "flexbox",
   "gutter-name": "gutter",
   "sizes": [
     {
@@ -25,18 +26,18 @@
     }
   ],
   "columns": [
-    1,2,3,4,5,6,7,8,9,10,11,12
+    "auto",1,2,3,4,5,6,7,8,9,10,11,12
   ],
   "gutters": [
-    1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+    "out",0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
   ],
   "tools": [
+    "reverse",
     "center",
     "left",
     "right",
-    "hidden",
     "first",
     "last",
-    "reverse"
+    "hidden"
   ]
 }

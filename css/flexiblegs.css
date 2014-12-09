@@ -1,10 +1,10 @@
-﻿/*! Flexible Grid System 2.3.3 | MIT License | flexible.gs */
+﻿/*! Flexible Grid System 2.3.4 | MIT License | flexible.gs */
 
-/* wrap */
+/* wrap · flexbox */
 /* xl · lg · md · sm · xs */
-/* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 · gutter */
-/* 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 · column */
-/* center · left · right · hidden · first · last · reverse */
+/* out, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 · gutter */
+/* auto, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 · column */
+/* reverse · center · left · right · first · last · hidden */
 
 /* wrap */
 
@@ -21,6 +21,19 @@
   }
   .wrap {
     font-size: 0;
+    text-align: center;
+  }
+  .wrap > * {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    vertical-align: top;
+    font-size: 12px;
+  }
+  @-ms-viewport {
+    width: device-width;
+  }
+  .flexbox {
     -webkit-justify-content: center;
     justify-content: center;
     display: -webkit-box;
@@ -37,155 +50,10 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  .wrap > * {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    vertical-align: top;
-    font-size: 12px;
-  }
-  @-ms-viewport {
-    width: device-width;
-  }
 
 /* xs */
 
-  .left-xs {
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-  }
-  .right-xs {
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
-  }
-  .center-xs {
-    -webkit-justify-content: center;
-    justify-content: center;
-  }
-  .gutter-1-xs {
-    margin:0 -1px 0 -1px;
-  }
-  .gutter-1-xs > * {
-    padding:0 1px;
-  }
-  .gutter-2-xs {
-    margin:0 -2px 0 -2px;
-  }
-  .gutter-2-xs > * {
-    padding:0 2px;
-  }
-  .gutter-3-xs {
-    margin:0 -3px 0 -3px;
-  }
-  .gutter-3-xs > * {
-    padding:0 3px;
-  }
-  .gutter-4-xs {
-    margin:0 -4px 0 -4px;
-  }
-  .gutter-4-xs > * {
-    padding:0 4px;
-  }
-  .gutter-5-xs {
-    margin:0 -5px 0 -5px;
-  }
-  .gutter-5-xs > * {
-    padding:0 5px;
-  }
-  .gutter-6-xs {
-    margin:0 -6px 0 -6px;
-  }
-  .gutter-6-xs > * {
-    padding:0 6px;
-  }
-  .gutter-7-xs {
-    margin:0 -7px 0 -7px;
-  }
-  .gutter-7-xs > * {
-    padding:0 7px;
-  }
-  .gutter-8-xs {
-    margin:0 -8px 0 -8px;
-  }
-  .gutter-8-xs > * {
-    padding:0 8px;
-  }
-  .gutter-9-xs {
-    margin:0 -9px 0 -9px;
-  }
-  .gutter-9-xs > * {
-    padding:0 9px;
-  }
-  .gutter-10-xs {
-    margin:0 -10px 0 -10px;
-  }
-  .gutter-10-xs > * {
-    padding:0 10px;
-  }
-  .gutter-11-xs {
-    margin:0 -11px 0 -11px;
-  }
-  .gutter-11-xs > * {
-    padding:0 11px;
-  }
-  .gutter-12-xs {
-    margin:0 -12px 0 -12px;
-  }
-  .gutter-12-xs > * {
-    padding:0 12px;
-  }
-  .gutter-13-xs {
-    margin:0 -13px 0 -13px;
-  }
-  .gutter-13-xs > * {
-    padding:0 13px;
-  }
-  .gutter-14-xs {
-    margin:0 -14px 0 -14px;
-  }
-  .gutter-14-xs > * {
-    padding:0 14px;
-  }
-  .gutter-15-xs {
-    margin:0 -15px 0 -15px;
-  }
-  .gutter-15-xs > * {
-    padding:0 15px;
-  }
-  .gutter-16-xs {
-    margin:0 -16px 0 -16px;
-  }
-  .gutter-16-xs > * {
-    padding:0 16px;
-  }
-  .gutter-17-xs {
-    margin:0 -17px 0 -17px;
-  }
-  .gutter-17-xs > * {
-    padding:0 17px;
-  }
-  .gutter-18-xs {
-    margin:0 -18px 0 -18px;
-  }
-  .gutter-18-xs > * {
-    padding:0 18px;
-  }
-  .gutter-19-xs {
-    margin:0 -19px 0 -19px;
-  }
-  .gutter-19-xs > * {
-    padding:0 19px;
-  }
-  .gutter-20-xs {
-    margin:0 -20px 0 -20px;
-  }
-  .gutter-20-xs > * {
-    padding:0 20px;
-  }
-  .gutter-out-xs {
-    margin:0;
-  }
-  [class^="xs-"] {
+  [class*="xs-"] {
     display: inline-block;
   }
   .xs-auto {
@@ -354,8 +222,161 @@
   .xs-12-11 {
     width:91.66666666666667%;
   }
-  .hidden-xs {
-    display:none;
+  .gutter-1-xs {
+    margin:0 -1px 0 -1px;
+  }
+  .gutter-1-xs > * {
+    padding:0 1px;
+  }
+  .gutter-2-xs {
+    margin:0 -2px 0 -2px;
+  }
+  .gutter-2-xs > * {
+    padding:0 2px;
+  }
+  .gutter-3-xs {
+    margin:0 -3px 0 -3px;
+  }
+  .gutter-3-xs > * {
+    padding:0 3px;
+  }
+  .gutter-4-xs {
+    margin:0 -4px 0 -4px;
+  }
+  .gutter-4-xs > * {
+    padding:0 4px;
+  }
+  .gutter-5-xs {
+    margin:0 -5px 0 -5px;
+  }
+  .gutter-5-xs > * {
+    padding:0 5px;
+  }
+  .gutter-6-xs {
+    margin:0 -6px 0 -6px;
+  }
+  .gutter-6-xs > * {
+    padding:0 6px;
+  }
+  .gutter-7-xs {
+    margin:0 -7px 0 -7px;
+  }
+  .gutter-7-xs > * {
+    padding:0 7px;
+  }
+  .gutter-8-xs {
+    margin:0 -8px 0 -8px;
+  }
+  .gutter-8-xs > * {
+    padding:0 8px;
+  }
+  .gutter-9-xs {
+    margin:0 -9px 0 -9px;
+  }
+  .gutter-9-xs > * {
+    padding:0 9px;
+  }
+  .gutter-10-xs {
+    margin:0 -10px 0 -10px;
+  }
+  .gutter-10-xs > * {
+    padding:0 10px;
+  }
+  .gutter-11-xs {
+    margin:0 -11px 0 -11px;
+  }
+  .gutter-11-xs > * {
+    padding:0 11px;
+  }
+  .gutter-12-xs {
+    margin:0 -12px 0 -12px;
+  }
+  .gutter-12-xs > * {
+    padding:0 12px;
+  }
+  .gutter-13-xs {
+    margin:0 -13px 0 -13px;
+  }
+  .gutter-13-xs > * {
+    padding:0 13px;
+  }
+  .gutter-14-xs {
+    margin:0 -14px 0 -14px;
+  }
+  .gutter-14-xs > * {
+    padding:0 14px;
+  }
+  .gutter-15-xs {
+    margin:0 -15px 0 -15px;
+  }
+  .gutter-15-xs > * {
+    padding:0 15px;
+  }
+  .gutter-16-xs {
+    margin:0 -16px 0 -16px;
+  }
+  .gutter-16-xs > * {
+    padding:0 16px;
+  }
+  .gutter-17-xs {
+    margin:0 -17px 0 -17px;
+  }
+  .gutter-17-xs > * {
+    padding:0 17px;
+  }
+  .gutter-18-xs {
+    margin:0 -18px 0 -18px;
+  }
+  .gutter-18-xs > * {
+    padding:0 18px;
+  }
+  .gutter-19-xs {
+    margin:0 -19px 0 -19px;
+  }
+  .gutter-19-xs > * {
+    padding:0 19px;
+  }
+  .gutter-20-xs {
+    margin:0 -20px 0 -20px;
+  }
+  .gutter-20-xs > * {
+    padding:0 20px;
+  }
+  .gutter-out-xs {
+    margin:0;
+  }
+  [class^="reverse-"] {
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .reverse-xs {
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-flex-wrap: wrap-reverse;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+  }
+  .center-xs {
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .left-xs {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .right-xs {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    text-align: right;
   }
   [class^="first-"], [class^="last-"] {
     -webkit-box-ordinal-group: 0;
@@ -378,170 +399,14 @@
     -webkit-order: 1;
     order: 1;
   }
-  [class^="reverse-"] {
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .reverse-xs {
-    -webkit-box-direction: reverse;
-    -webkit-flex-direction: row-reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-    -webkit-flex-wrap: wrap-reverse;
-    -ms-flex-wrap: wrap-reverse;
-    flex-wrap: wrap-reverse;
+  .hidden-xs {
+    display: none;
   }
 
 /* sm */
 
   @media (min-width: 415px) {
-    .left-sm {
-      -webkit-justify-content: flex-start;
-      justify-content: flex-start;
-    }
-    .right-sm {
-      -webkit-justify-content: flex-end;
-      justify-content: flex-end;
-    }
-    .center-sm {
-      -webkit-justify-content: center;
-      justify-content: center;
-    }
-    .gutter-0-sm {
-      margin:0;
-    }
-    .gutter-0-sm > * {
-      padding:0;
-    }
-    .gutter-1-sm {
-      margin:0 -1px 0 -1px;
-    }
-    .gutter-1-sm > * {
-      padding:0 1px;
-    }
-    .gutter-2-sm {
-      margin:0 -2px 0 -2px;
-    }
-    .gutter-2-sm > * {
-      padding:0 2px;
-    }
-    .gutter-3-sm {
-      margin:0 -3px 0 -3px;
-    }
-    .gutter-3-sm > * {
-      padding:0 3px;
-    }
-    .gutter-4-sm {
-      margin:0 -4px 0 -4px;
-    }
-    .gutter-4-sm > * {
-      padding:0 4px;
-    }
-    .gutter-5-sm {
-      margin:0 -5px 0 -5px;
-    }
-    .gutter-5-sm > * {
-      padding:0 5px;
-    }
-    .gutter-6-sm {
-      margin:0 -6px 0 -6px;
-    }
-    .gutter-6-sm > * {
-      padding:0 6px;
-    }
-    .gutter-7-sm {
-      margin:0 -7px 0 -7px;
-    }
-    .gutter-7-sm > * {
-      padding:0 7px;
-    }
-    .gutter-8-sm {
-      margin:0 -8px 0 -8px;
-    }
-    .gutter-8-sm > * {
-      padding:0 8px;
-    }
-    .gutter-9-sm {
-      margin:0 -9px 0 -9px;
-    }
-    .gutter-9-sm > * {
-      padding:0 9px;
-    }
-    .gutter-10-sm {
-      margin:0 -10px 0 -10px;
-    }
-    .gutter-10-sm > * {
-      padding:0 10px;
-    }
-    .gutter-11-sm {
-      margin:0 -11px 0 -11px;
-    }
-    .gutter-11-sm > * {
-      padding:0 11px;
-    }
-    .gutter-12-sm {
-      margin:0 -12px 0 -12px;
-    }
-    .gutter-12-sm > * {
-      padding:0 12px;
-    }
-    .gutter-13-sm {
-      margin:0 -13px 0 -13px;
-    }
-    .gutter-13-sm > * {
-      padding:0 13px;
-    }
-    .gutter-14-sm {
-      margin:0 -14px 0 -14px;
-    }
-    .gutter-14-sm > * {
-      padding:0 14px;
-    }
-    .gutter-15-sm {
-      margin:0 -15px 0 -15px;
-    }
-    .gutter-15-sm > * {
-      padding:0 15px;
-    }
-    .gutter-16-sm {
-      margin:0 -16px 0 -16px;
-    }
-    .gutter-16-sm > * {
-      padding:0 16px;
-    }
-    .gutter-17-sm {
-      margin:0 -17px 0 -17px;
-    }
-    .gutter-17-sm > * {
-      padding:0 17px;
-    }
-    .gutter-18-sm {
-      margin:0 -18px 0 -18px;
-    }
-    .gutter-18-sm > * {
-      padding:0 18px;
-    }
-    .gutter-19-sm {
-      margin:0 -19px 0 -19px;
-    }
-    .gutter-19-sm > * {
-      padding:0 19px;
-    }
-    .gutter-20-sm {
-      margin:0 -20px 0 -20px;
-    }
-    .gutter-20-sm > * {
-      padding:0 20px;
-    }
-    .gutter-out-sm {
-      margin:0;
-    }
-    [class^="sm-"] {
+    [class*="sm-"] {
       display: inline-block;
     }
     .sm-auto {
@@ -710,8 +575,167 @@
     .sm-12-11 {
       width:91.66666666666667%;
     }
-    .hidden-sm {
-      display:none;
+    .gutter-0-sm {
+      margin:0;
+    }
+    .gutter-0-sm > * {
+      padding:0;
+    }
+    .gutter-1-sm {
+      margin:0 -1px 0 -1px;
+    }
+    .gutter-1-sm > * {
+      padding:0 1px;
+    }
+    .gutter-2-sm {
+      margin:0 -2px 0 -2px;
+    }
+    .gutter-2-sm > * {
+      padding:0 2px;
+    }
+    .gutter-3-sm {
+      margin:0 -3px 0 -3px;
+    }
+    .gutter-3-sm > * {
+      padding:0 3px;
+    }
+    .gutter-4-sm {
+      margin:0 -4px 0 -4px;
+    }
+    .gutter-4-sm > * {
+      padding:0 4px;
+    }
+    .gutter-5-sm {
+      margin:0 -5px 0 -5px;
+    }
+    .gutter-5-sm > * {
+      padding:0 5px;
+    }
+    .gutter-6-sm {
+      margin:0 -6px 0 -6px;
+    }
+    .gutter-6-sm > * {
+      padding:0 6px;
+    }
+    .gutter-7-sm {
+      margin:0 -7px 0 -7px;
+    }
+    .gutter-7-sm > * {
+      padding:0 7px;
+    }
+    .gutter-8-sm {
+      margin:0 -8px 0 -8px;
+    }
+    .gutter-8-sm > * {
+      padding:0 8px;
+    }
+    .gutter-9-sm {
+      margin:0 -9px 0 -9px;
+    }
+    .gutter-9-sm > * {
+      padding:0 9px;
+    }
+    .gutter-10-sm {
+      margin:0 -10px 0 -10px;
+    }
+    .gutter-10-sm > * {
+      padding:0 10px;
+    }
+    .gutter-11-sm {
+      margin:0 -11px 0 -11px;
+    }
+    .gutter-11-sm > * {
+      padding:0 11px;
+    }
+    .gutter-12-sm {
+      margin:0 -12px 0 -12px;
+    }
+    .gutter-12-sm > * {
+      padding:0 12px;
+    }
+    .gutter-13-sm {
+      margin:0 -13px 0 -13px;
+    }
+    .gutter-13-sm > * {
+      padding:0 13px;
+    }
+    .gutter-14-sm {
+      margin:0 -14px 0 -14px;
+    }
+    .gutter-14-sm > * {
+      padding:0 14px;
+    }
+    .gutter-15-sm {
+      margin:0 -15px 0 -15px;
+    }
+    .gutter-15-sm > * {
+      padding:0 15px;
+    }
+    .gutter-16-sm {
+      margin:0 -16px 0 -16px;
+    }
+    .gutter-16-sm > * {
+      padding:0 16px;
+    }
+    .gutter-17-sm {
+      margin:0 -17px 0 -17px;
+    }
+    .gutter-17-sm > * {
+      padding:0 17px;
+    }
+    .gutter-18-sm {
+      margin:0 -18px 0 -18px;
+    }
+    .gutter-18-sm > * {
+      padding:0 18px;
+    }
+    .gutter-19-sm {
+      margin:0 -19px 0 -19px;
+    }
+    .gutter-19-sm > * {
+      padding:0 19px;
+    }
+    .gutter-20-sm {
+      margin:0 -20px 0 -20px;
+    }
+    .gutter-20-sm > * {
+      padding:0 20px;
+    }
+    .gutter-out-sm {
+      margin:0;
+    }
+    [class^="reverse-"] {
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    .reverse-sm {
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      -webkit-flex-wrap: wrap-reverse;
+      -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+    }
+    .center-sm {
+      -webkit-justify-content: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .left-sm {
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+      text-align: left;
+    }
+    .right-sm {
+      -webkit-justify-content: flex-end;
+      justify-content: flex-end;
+      text-align: right;
     }
     [class^="first-"], [class^="last-"] {
       -webkit-box-ordinal-group: 0;
@@ -734,171 +758,15 @@
       -webkit-order: 1;
       order: 1;
     }
-    [class^="reverse-"] {
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-    }
-    .reverse-sm {
-      -webkit-box-direction: reverse;
-      -webkit-flex-direction: row-reverse;
-      -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse;
-      -webkit-flex-wrap: wrap-reverse;
-      -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
+    .hidden-sm {
+      display: none;
     }
   }
 
 /* md */
 
   @media (min-width: 668px) {
-    .left-md {
-      -webkit-justify-content: flex-start;
-      justify-content: flex-start;
-    }
-    .right-md {
-      -webkit-justify-content: flex-end;
-      justify-content: flex-end;
-    }
-    .center-md {
-      -webkit-justify-content: center;
-      justify-content: center;
-    }
-    .gutter-0-md {
-      margin:0;
-    }
-    .gutter-0-md > * {
-      padding:0;
-    }
-    .gutter-1-md {
-      margin:0 -1px 0 -1px;
-    }
-    .gutter-1-md > * {
-      padding:0 1px;
-    }
-    .gutter-2-md {
-      margin:0 -2px 0 -2px;
-    }
-    .gutter-2-md > * {
-      padding:0 2px;
-    }
-    .gutter-3-md {
-      margin:0 -3px 0 -3px;
-    }
-    .gutter-3-md > * {
-      padding:0 3px;
-    }
-    .gutter-4-md {
-      margin:0 -4px 0 -4px;
-    }
-    .gutter-4-md > * {
-      padding:0 4px;
-    }
-    .gutter-5-md {
-      margin:0 -5px 0 -5px;
-    }
-    .gutter-5-md > * {
-      padding:0 5px;
-    }
-    .gutter-6-md {
-      margin:0 -6px 0 -6px;
-    }
-    .gutter-6-md > * {
-      padding:0 6px;
-    }
-    .gutter-7-md {
-      margin:0 -7px 0 -7px;
-    }
-    .gutter-7-md > * {
-      padding:0 7px;
-    }
-    .gutter-8-md {
-      margin:0 -8px 0 -8px;
-    }
-    .gutter-8-md > * {
-      padding:0 8px;
-    }
-    .gutter-9-md {
-      margin:0 -9px 0 -9px;
-    }
-    .gutter-9-md > * {
-      padding:0 9px;
-    }
-    .gutter-10-md {
-      margin:0 -10px 0 -10px;
-    }
-    .gutter-10-md > * {
-      padding:0 10px;
-    }
-    .gutter-11-md {
-      margin:0 -11px 0 -11px;
-    }
-    .gutter-11-md > * {
-      padding:0 11px;
-    }
-    .gutter-12-md {
-      margin:0 -12px 0 -12px;
-    }
-    .gutter-12-md > * {
-      padding:0 12px;
-    }
-    .gutter-13-md {
-      margin:0 -13px 0 -13px;
-    }
-    .gutter-13-md > * {
-      padding:0 13px;
-    }
-    .gutter-14-md {
-      margin:0 -14px 0 -14px;
-    }
-    .gutter-14-md > * {
-      padding:0 14px;
-    }
-    .gutter-15-md {
-      margin:0 -15px 0 -15px;
-    }
-    .gutter-15-md > * {
-      padding:0 15px;
-    }
-    .gutter-16-md {
-      margin:0 -16px 0 -16px;
-    }
-    .gutter-16-md > * {
-      padding:0 16px;
-    }
-    .gutter-17-md {
-      margin:0 -17px 0 -17px;
-    }
-    .gutter-17-md > * {
-      padding:0 17px;
-    }
-    .gutter-18-md {
-      margin:0 -18px 0 -18px;
-    }
-    .gutter-18-md > * {
-      padding:0 18px;
-    }
-    .gutter-19-md {
-      margin:0 -19px 0 -19px;
-    }
-    .gutter-19-md > * {
-      padding:0 19px;
-    }
-    .gutter-20-md {
-      margin:0 -20px 0 -20px;
-    }
-    .gutter-20-md > * {
-      padding:0 20px;
-    }
-    .gutter-out-md {
-      margin:0;
-    }
-    [class^="md-"] {
+    [class*="md-"] {
       display: inline-block;
     }
     .md-auto {
@@ -1067,8 +935,167 @@
     .md-12-11 {
       width:91.66666666666667%;
     }
-    .hidden-md {
-      display:none;
+    .gutter-0-md {
+      margin:0;
+    }
+    .gutter-0-md > * {
+      padding:0;
+    }
+    .gutter-1-md {
+      margin:0 -1px 0 -1px;
+    }
+    .gutter-1-md > * {
+      padding:0 1px;
+    }
+    .gutter-2-md {
+      margin:0 -2px 0 -2px;
+    }
+    .gutter-2-md > * {
+      padding:0 2px;
+    }
+    .gutter-3-md {
+      margin:0 -3px 0 -3px;
+    }
+    .gutter-3-md > * {
+      padding:0 3px;
+    }
+    .gutter-4-md {
+      margin:0 -4px 0 -4px;
+    }
+    .gutter-4-md > * {
+      padding:0 4px;
+    }
+    .gutter-5-md {
+      margin:0 -5px 0 -5px;
+    }
+    .gutter-5-md > * {
+      padding:0 5px;
+    }
+    .gutter-6-md {
+      margin:0 -6px 0 -6px;
+    }
+    .gutter-6-md > * {
+      padding:0 6px;
+    }
+    .gutter-7-md {
+      margin:0 -7px 0 -7px;
+    }
+    .gutter-7-md > * {
+      padding:0 7px;
+    }
+    .gutter-8-md {
+      margin:0 -8px 0 -8px;
+    }
+    .gutter-8-md > * {
+      padding:0 8px;
+    }
+    .gutter-9-md {
+      margin:0 -9px 0 -9px;
+    }
+    .gutter-9-md > * {
+      padding:0 9px;
+    }
+    .gutter-10-md {
+      margin:0 -10px 0 -10px;
+    }
+    .gutter-10-md > * {
+      padding:0 10px;
+    }
+    .gutter-11-md {
+      margin:0 -11px 0 -11px;
+    }
+    .gutter-11-md > * {
+      padding:0 11px;
+    }
+    .gutter-12-md {
+      margin:0 -12px 0 -12px;
+    }
+    .gutter-12-md > * {
+      padding:0 12px;
+    }
+    .gutter-13-md {
+      margin:0 -13px 0 -13px;
+    }
+    .gutter-13-md > * {
+      padding:0 13px;
+    }
+    .gutter-14-md {
+      margin:0 -14px 0 -14px;
+    }
+    .gutter-14-md > * {
+      padding:0 14px;
+    }
+    .gutter-15-md {
+      margin:0 -15px 0 -15px;
+    }
+    .gutter-15-md > * {
+      padding:0 15px;
+    }
+    .gutter-16-md {
+      margin:0 -16px 0 -16px;
+    }
+    .gutter-16-md > * {
+      padding:0 16px;
+    }
+    .gutter-17-md {
+      margin:0 -17px 0 -17px;
+    }
+    .gutter-17-md > * {
+      padding:0 17px;
+    }
+    .gutter-18-md {
+      margin:0 -18px 0 -18px;
+    }
+    .gutter-18-md > * {
+      padding:0 18px;
+    }
+    .gutter-19-md {
+      margin:0 -19px 0 -19px;
+    }
+    .gutter-19-md > * {
+      padding:0 19px;
+    }
+    .gutter-20-md {
+      margin:0 -20px 0 -20px;
+    }
+    .gutter-20-md > * {
+      padding:0 20px;
+    }
+    .gutter-out-md {
+      margin:0;
+    }
+    [class^="reverse-"] {
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    .reverse-md {
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      -webkit-flex-wrap: wrap-reverse;
+      -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+    }
+    .center-md {
+      -webkit-justify-content: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .left-md {
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+      text-align: left;
+    }
+    .right-md {
+      -webkit-justify-content: flex-end;
+      justify-content: flex-end;
+      text-align: right;
     }
     [class^="first-"], [class^="last-"] {
       -webkit-box-ordinal-group: 0;
@@ -1091,171 +1118,15 @@
       -webkit-order: 1;
       order: 1;
     }
-    [class^="reverse-"] {
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-    }
-    .reverse-md {
-      -webkit-box-direction: reverse;
-      -webkit-flex-direction: row-reverse;
-      -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse;
-      -webkit-flex-wrap: wrap-reverse;
-      -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
+    .hidden-md {
+      display: none;
     }
   }
 
 /* lg */
 
   @media (min-width: 769px) {
-    .left-lg {
-      -webkit-justify-content: flex-start;
-      justify-content: flex-start;
-    }
-    .right-lg {
-      -webkit-justify-content: flex-end;
-      justify-content: flex-end;
-    }
-    .center-lg {
-      -webkit-justify-content: center;
-      justify-content: center;
-    }
-    .gutter-0-lg {
-      margin:0;
-    }
-    .gutter-0-lg > * {
-      padding:0;
-    }
-    .gutter-1-lg {
-      margin:0 -1px 0 -1px;
-    }
-    .gutter-1-lg > * {
-      padding:0 1px;
-    }
-    .gutter-2-lg {
-      margin:0 -2px 0 -2px;
-    }
-    .gutter-2-lg > * {
-      padding:0 2px;
-    }
-    .gutter-3-lg {
-      margin:0 -3px 0 -3px;
-    }
-    .gutter-3-lg > * {
-      padding:0 3px;
-    }
-    .gutter-4-lg {
-      margin:0 -4px 0 -4px;
-    }
-    .gutter-4-lg > * {
-      padding:0 4px;
-    }
-    .gutter-5-lg {
-      margin:0 -5px 0 -5px;
-    }
-    .gutter-5-lg > * {
-      padding:0 5px;
-    }
-    .gutter-6-lg {
-      margin:0 -6px 0 -6px;
-    }
-    .gutter-6-lg > * {
-      padding:0 6px;
-    }
-    .gutter-7-lg {
-      margin:0 -7px 0 -7px;
-    }
-    .gutter-7-lg > * {
-      padding:0 7px;
-    }
-    .gutter-8-lg {
-      margin:0 -8px 0 -8px;
-    }
-    .gutter-8-lg > * {
-      padding:0 8px;
-    }
-    .gutter-9-lg {
-      margin:0 -9px 0 -9px;
-    }
-    .gutter-9-lg > * {
-      padding:0 9px;
-    }
-    .gutter-10-lg {
-      margin:0 -10px 0 -10px;
-    }
-    .gutter-10-lg > * {
-      padding:0 10px;
-    }
-    .gutter-11-lg {
-      margin:0 -11px 0 -11px;
-    }
-    .gutter-11-lg > * {
-      padding:0 11px;
-    }
-    .gutter-12-lg {
-      margin:0 -12px 0 -12px;
-    }
-    .gutter-12-lg > * {
-      padding:0 12px;
-    }
-    .gutter-13-lg {
-      margin:0 -13px 0 -13px;
-    }
-    .gutter-13-lg > * {
-      padding:0 13px;
-    }
-    .gutter-14-lg {
-      margin:0 -14px 0 -14px;
-    }
-    .gutter-14-lg > * {
-      padding:0 14px;
-    }
-    .gutter-15-lg {
-      margin:0 -15px 0 -15px;
-    }
-    .gutter-15-lg > * {
-      padding:0 15px;
-    }
-    .gutter-16-lg {
-      margin:0 -16px 0 -16px;
-    }
-    .gutter-16-lg > * {
-      padding:0 16px;
-    }
-    .gutter-17-lg {
-      margin:0 -17px 0 -17px;
-    }
-    .gutter-17-lg > * {
-      padding:0 17px;
-    }
-    .gutter-18-lg {
-      margin:0 -18px 0 -18px;
-    }
-    .gutter-18-lg > * {
-      padding:0 18px;
-    }
-    .gutter-19-lg {
-      margin:0 -19px 0 -19px;
-    }
-    .gutter-19-lg > * {
-      padding:0 19px;
-    }
-    .gutter-20-lg {
-      margin:0 -20px 0 -20px;
-    }
-    .gutter-20-lg > * {
-      padding:0 20px;
-    }
-    .gutter-out-lg {
-      margin:0;
-    }
-    [class^="lg-"] {
+    [class*="lg-"] {
       display: inline-block;
     }
     .lg-auto {
@@ -1424,8 +1295,167 @@
     .lg-12-11 {
       width:91.66666666666667%;
     }
-    .hidden-lg {
-      display:none;
+    .gutter-0-lg {
+      margin:0;
+    }
+    .gutter-0-lg > * {
+      padding:0;
+    }
+    .gutter-1-lg {
+      margin:0 -1px 0 -1px;
+    }
+    .gutter-1-lg > * {
+      padding:0 1px;
+    }
+    .gutter-2-lg {
+      margin:0 -2px 0 -2px;
+    }
+    .gutter-2-lg > * {
+      padding:0 2px;
+    }
+    .gutter-3-lg {
+      margin:0 -3px 0 -3px;
+    }
+    .gutter-3-lg > * {
+      padding:0 3px;
+    }
+    .gutter-4-lg {
+      margin:0 -4px 0 -4px;
+    }
+    .gutter-4-lg > * {
+      padding:0 4px;
+    }
+    .gutter-5-lg {
+      margin:0 -5px 0 -5px;
+    }
+    .gutter-5-lg > * {
+      padding:0 5px;
+    }
+    .gutter-6-lg {
+      margin:0 -6px 0 -6px;
+    }
+    .gutter-6-lg > * {
+      padding:0 6px;
+    }
+    .gutter-7-lg {
+      margin:0 -7px 0 -7px;
+    }
+    .gutter-7-lg > * {
+      padding:0 7px;
+    }
+    .gutter-8-lg {
+      margin:0 -8px 0 -8px;
+    }
+    .gutter-8-lg > * {
+      padding:0 8px;
+    }
+    .gutter-9-lg {
+      margin:0 -9px 0 -9px;
+    }
+    .gutter-9-lg > * {
+      padding:0 9px;
+    }
+    .gutter-10-lg {
+      margin:0 -10px 0 -10px;
+    }
+    .gutter-10-lg > * {
+      padding:0 10px;
+    }
+    .gutter-11-lg {
+      margin:0 -11px 0 -11px;
+    }
+    .gutter-11-lg > * {
+      padding:0 11px;
+    }
+    .gutter-12-lg {
+      margin:0 -12px 0 -12px;
+    }
+    .gutter-12-lg > * {
+      padding:0 12px;
+    }
+    .gutter-13-lg {
+      margin:0 -13px 0 -13px;
+    }
+    .gutter-13-lg > * {
+      padding:0 13px;
+    }
+    .gutter-14-lg {
+      margin:0 -14px 0 -14px;
+    }
+    .gutter-14-lg > * {
+      padding:0 14px;
+    }
+    .gutter-15-lg {
+      margin:0 -15px 0 -15px;
+    }
+    .gutter-15-lg > * {
+      padding:0 15px;
+    }
+    .gutter-16-lg {
+      margin:0 -16px 0 -16px;
+    }
+    .gutter-16-lg > * {
+      padding:0 16px;
+    }
+    .gutter-17-lg {
+      margin:0 -17px 0 -17px;
+    }
+    .gutter-17-lg > * {
+      padding:0 17px;
+    }
+    .gutter-18-lg {
+      margin:0 -18px 0 -18px;
+    }
+    .gutter-18-lg > * {
+      padding:0 18px;
+    }
+    .gutter-19-lg {
+      margin:0 -19px 0 -19px;
+    }
+    .gutter-19-lg > * {
+      padding:0 19px;
+    }
+    .gutter-20-lg {
+      margin:0 -20px 0 -20px;
+    }
+    .gutter-20-lg > * {
+      padding:0 20px;
+    }
+    .gutter-out-lg {
+      margin:0;
+    }
+    [class^="reverse-"] {
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    .reverse-lg {
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      -webkit-flex-wrap: wrap-reverse;
+      -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+    }
+    .center-lg {
+      -webkit-justify-content: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .left-lg {
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+      text-align: left;
+    }
+    .right-lg {
+      -webkit-justify-content: flex-end;
+      justify-content: flex-end;
+      text-align: right;
     }
     [class^="first-"], [class^="last-"] {
       -webkit-box-ordinal-group: 0;
@@ -1448,171 +1478,15 @@
       -webkit-order: 1;
       order: 1;
     }
-    [class^="reverse-"] {
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-    }
-    .reverse-lg {
-      -webkit-box-direction: reverse;
-      -webkit-flex-direction: row-reverse;
-      -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse;
-      -webkit-flex-wrap: wrap-reverse;
-      -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
+    .hidden-lg {
+      display: none;
     }
   }
 
 /* xl */
 
   @media (min-width: 1025px) {
-    .left-xl {
-      -webkit-justify-content: flex-start;
-      justify-content: flex-start;
-    }
-    .right-xl {
-      -webkit-justify-content: flex-end;
-      justify-content: flex-end;
-    }
-    .center-xl {
-      -webkit-justify-content: center;
-      justify-content: center;
-    }
-    .gutter-0-xl {
-      margin:0;
-    }
-    .gutter-0-xl > * {
-      padding:0;
-    }
-    .gutter-1-xl {
-      margin:0 -1px 0 -1px;
-    }
-    .gutter-1-xl > * {
-      padding:0 1px;
-    }
-    .gutter-2-xl {
-      margin:0 -2px 0 -2px;
-    }
-    .gutter-2-xl > * {
-      padding:0 2px;
-    }
-    .gutter-3-xl {
-      margin:0 -3px 0 -3px;
-    }
-    .gutter-3-xl > * {
-      padding:0 3px;
-    }
-    .gutter-4-xl {
-      margin:0 -4px 0 -4px;
-    }
-    .gutter-4-xl > * {
-      padding:0 4px;
-    }
-    .gutter-5-xl {
-      margin:0 -5px 0 -5px;
-    }
-    .gutter-5-xl > * {
-      padding:0 5px;
-    }
-    .gutter-6-xl {
-      margin:0 -6px 0 -6px;
-    }
-    .gutter-6-xl > * {
-      padding:0 6px;
-    }
-    .gutter-7-xl {
-      margin:0 -7px 0 -7px;
-    }
-    .gutter-7-xl > * {
-      padding:0 7px;
-    }
-    .gutter-8-xl {
-      margin:0 -8px 0 -8px;
-    }
-    .gutter-8-xl > * {
-      padding:0 8px;
-    }
-    .gutter-9-xl {
-      margin:0 -9px 0 -9px;
-    }
-    .gutter-9-xl > * {
-      padding:0 9px;
-    }
-    .gutter-10-xl {
-      margin:0 -10px 0 -10px;
-    }
-    .gutter-10-xl > * {
-      padding:0 10px;
-    }
-    .gutter-11-xl {
-      margin:0 -11px 0 -11px;
-    }
-    .gutter-11-xl > * {
-      padding:0 11px;
-    }
-    .gutter-12-xl {
-      margin:0 -12px 0 -12px;
-    }
-    .gutter-12-xl > * {
-      padding:0 12px;
-    }
-    .gutter-13-xl {
-      margin:0 -13px 0 -13px;
-    }
-    .gutter-13-xl > * {
-      padding:0 13px;
-    }
-    .gutter-14-xl {
-      margin:0 -14px 0 -14px;
-    }
-    .gutter-14-xl > * {
-      padding:0 14px;
-    }
-    .gutter-15-xl {
-      margin:0 -15px 0 -15px;
-    }
-    .gutter-15-xl > * {
-      padding:0 15px;
-    }
-    .gutter-16-xl {
-      margin:0 -16px 0 -16px;
-    }
-    .gutter-16-xl > * {
-      padding:0 16px;
-    }
-    .gutter-17-xl {
-      margin:0 -17px 0 -17px;
-    }
-    .gutter-17-xl > * {
-      padding:0 17px;
-    }
-    .gutter-18-xl {
-      margin:0 -18px 0 -18px;
-    }
-    .gutter-18-xl > * {
-      padding:0 18px;
-    }
-    .gutter-19-xl {
-      margin:0 -19px 0 -19px;
-    }
-    .gutter-19-xl > * {
-      padding:0 19px;
-    }
-    .gutter-20-xl {
-      margin:0 -20px 0 -20px;
-    }
-    .gutter-20-xl > * {
-      padding:0 20px;
-    }
-    .gutter-out-xl {
-      margin:0;
-    }
-    [class^="xl-"] {
+    [class*="xl-"] {
       display: inline-block;
     }
     .xl-auto {
@@ -1781,8 +1655,167 @@
     .xl-12-11 {
       width:91.66666666666667%;
     }
-    .hidden-xl {
-      display:none;
+    .gutter-0-xl {
+      margin:0;
+    }
+    .gutter-0-xl > * {
+      padding:0;
+    }
+    .gutter-1-xl {
+      margin:0 -1px 0 -1px;
+    }
+    .gutter-1-xl > * {
+      padding:0 1px;
+    }
+    .gutter-2-xl {
+      margin:0 -2px 0 -2px;
+    }
+    .gutter-2-xl > * {
+      padding:0 2px;
+    }
+    .gutter-3-xl {
+      margin:0 -3px 0 -3px;
+    }
+    .gutter-3-xl > * {
+      padding:0 3px;
+    }
+    .gutter-4-xl {
+      margin:0 -4px 0 -4px;
+    }
+    .gutter-4-xl > * {
+      padding:0 4px;
+    }
+    .gutter-5-xl {
+      margin:0 -5px 0 -5px;
+    }
+    .gutter-5-xl > * {
+      padding:0 5px;
+    }
+    .gutter-6-xl {
+      margin:0 -6px 0 -6px;
+    }
+    .gutter-6-xl > * {
+      padding:0 6px;
+    }
+    .gutter-7-xl {
+      margin:0 -7px 0 -7px;
+    }
+    .gutter-7-xl > * {
+      padding:0 7px;
+    }
+    .gutter-8-xl {
+      margin:0 -8px 0 -8px;
+    }
+    .gutter-8-xl > * {
+      padding:0 8px;
+    }
+    .gutter-9-xl {
+      margin:0 -9px 0 -9px;
+    }
+    .gutter-9-xl > * {
+      padding:0 9px;
+    }
+    .gutter-10-xl {
+      margin:0 -10px 0 -10px;
+    }
+    .gutter-10-xl > * {
+      padding:0 10px;
+    }
+    .gutter-11-xl {
+      margin:0 -11px 0 -11px;
+    }
+    .gutter-11-xl > * {
+      padding:0 11px;
+    }
+    .gutter-12-xl {
+      margin:0 -12px 0 -12px;
+    }
+    .gutter-12-xl > * {
+      padding:0 12px;
+    }
+    .gutter-13-xl {
+      margin:0 -13px 0 -13px;
+    }
+    .gutter-13-xl > * {
+      padding:0 13px;
+    }
+    .gutter-14-xl {
+      margin:0 -14px 0 -14px;
+    }
+    .gutter-14-xl > * {
+      padding:0 14px;
+    }
+    .gutter-15-xl {
+      margin:0 -15px 0 -15px;
+    }
+    .gutter-15-xl > * {
+      padding:0 15px;
+    }
+    .gutter-16-xl {
+      margin:0 -16px 0 -16px;
+    }
+    .gutter-16-xl > * {
+      padding:0 16px;
+    }
+    .gutter-17-xl {
+      margin:0 -17px 0 -17px;
+    }
+    .gutter-17-xl > * {
+      padding:0 17px;
+    }
+    .gutter-18-xl {
+      margin:0 -18px 0 -18px;
+    }
+    .gutter-18-xl > * {
+      padding:0 18px;
+    }
+    .gutter-19-xl {
+      margin:0 -19px 0 -19px;
+    }
+    .gutter-19-xl > * {
+      padding:0 19px;
+    }
+    .gutter-20-xl {
+      margin:0 -20px 0 -20px;
+    }
+    .gutter-20-xl > * {
+      padding:0 20px;
+    }
+    .gutter-out-xl {
+      margin:0;
+    }
+    [class^="reverse-"] {
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    .reverse-xl {
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      -webkit-flex-wrap: wrap-reverse;
+      -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+    }
+    .center-xl {
+      -webkit-justify-content: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .left-xl {
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+      text-align: left;
+    }
+    .right-xl {
+      -webkit-justify-content: flex-end;
+      justify-content: flex-end;
+      text-align: right;
     }
     [class^="first-"], [class^="last-"] {
       -webkit-box-ordinal-group: 0;
@@ -1805,22 +1838,7 @@
       -webkit-order: 1;
       order: 1;
     }
-    [class^="reverse-"] {
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-    }
-    .reverse-xl {
-      -webkit-box-direction: reverse;
-      -webkit-flex-direction: row-reverse;
-      -ms-flex-direction: row-reverse;
-      flex-direction: row-reverse;
-      -webkit-flex-wrap: wrap-reverse;
-      -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
+    .hidden-xl {
+      display: none;
     }
   }
