@@ -1,4 +1,5 @@
 ﻿{
+  "name": "Flexible Grid System",
   "version": "2.3.4",
   "wrap-name": "wrap",
   "flexbox-name": "flexbox",
@@ -26,10 +27,10 @@
     }
   ],
   "columns": [
-    "auto",1,2,3,4,5,6,7,8,9,10,11,12
+    "auto","1","2","3","4","5","6","7","8","9","10","11","12"
   ],
   "gutters": [
-    "out",0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+    "out","0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"
   ],
   "tools": [
     "reverse",
@@ -39,5 +40,12 @@
     "first",
     "last",
     "hidden"
-  ]
+  ],
+  "reverse-name": "reverse",
+  "center-name": "center",
+  "left-name": "left",
+  "right-name": "right",
+  "first-name": "first",
+  "last-name": "last",
+  "hidden-name": "hidden"
 }
