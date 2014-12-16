@@ -1,4 +1,4 @@
-﻿/*! Flexible Grid System 2.3.4 | MIT License | flexible.gs */
+﻿/*! Flexible Grid System 2.3.5 | MIT License | flexible.gs */
 
 /* wrap · flexbox */
 /* xl · lg · md · sm · xs */
@@ -28,7 +28,7 @@
     width: 100%;
     min-height: 1px;
     vertical-align: top;
-    font-size: 12px;
+    font-size: 1rem;
   }
   @-ms-viewport {
     width: device-width;
