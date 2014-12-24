@@ -1,6 +1,9 @@
 ﻿{
   "name": "Flexible Grid System",
   "version": "2.3.5",
+  "format": [
+    "css", "sass"
+  ],
   "wrap-name": "wrap",
   "flexbox-name": "flexbox",
   "gutter-name": "gutter",

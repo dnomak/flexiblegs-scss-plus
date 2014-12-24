@@ -8,16 +8,15 @@
 
 /* wrap */
 
-  * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
+  *,
   *:before,
   *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+  }
+  @-ms-viewport {
+    width: device-width;
   }
   .wrap {
     font-size: 0;
@@ -29,9 +28,6 @@
     min-height: 1px;
     vertical-align: top;
     font-size: 1rem;
-  }
-  @-ms-viewport {
-    width: device-width;
   }
   .flexbox {
     -webkit-justify-content: center;
