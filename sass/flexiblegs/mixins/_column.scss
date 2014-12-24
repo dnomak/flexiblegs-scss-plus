@@ -1,17 +1,33 @@
 ﻿// column
 
-@include breakpoint(xs) {
+@mixin column($class) {
 
-}
-@include breakpoint(sm) {
+  @if $class == xs {
+    width: 100%;
+  }
 
-}
-@include breakpoint(md) {
+  @else if $class == sm {
+    @media (min-width: 415px) {
+      width: 100%;
+    }
+  }
 
-}
-@include breakpoint(lg) {
+  @else if $class == md {
+    @media (min-width: 668px) {
+      width: 100%;
+    }
+  }
 
-}
-@include breakpoint(xl) {
+  @else if $class == lg {
+    @media (min-width: 769px) {
+      width: 100%;
+    }
+  }
+
+  @else if $class == xl {
+    @media (min-width: 1025px) {
+      width: 100%;
+    }
+  }
 
 }

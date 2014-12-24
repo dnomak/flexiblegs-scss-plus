@@ -14,23 +14,46 @@
 @mixin breakpoint($class) {
 
   @if $class == xs {
+    [class*="xs-"] {
+      display: inline-block;
+    }
     @content;
   }
 
   @else if $class == sm {
-    @media (min-width: 415px) { @content; }
+    @media (min-width: 415px) {
+      [class*="sm-"] {
+        display: inline-block;
+      }
+      @content;
+    }
   }
 
   @else if $class == md {
-    @media (min-width: 668px) { @content; }
+    @media (min-width: 668px) {
+      [class*="md-"] {
+        display: inline-block;
+      }
+      @content;
+    }
   }
 
   @else if $class == lg {
-    @media (min-width: 769px) { @content; }
+    @media (min-width: 769px) {
+      [class*="lg-"] {
+        display: inline-block;
+      }
+      @content;
+    }
   }
 
   @else if $class == xl {
-    @media (min-width: 1025px) { @content; }
+    @media (min-width: 1025px) {
+      [class*="xl-"] {
+        display: inline-block;
+      }
+      @content;
+    }
   }
 
 }
