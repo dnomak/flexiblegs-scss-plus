@@ -1,32 +1,87 @@
 ﻿// column
 
-@mixin column($class) {
+@mixin column($class: null, $row: null, $col: null) {
+
+  // xs
 
   @if $class == xs {
-    width: 100%;
+    display: inline-block;
+    @if $row == 1 {
+      width: 100%;
+    }
+    @if $row == auto {
+      width: auto;
+    }
+    @if $col != null {
+      width: 100% / $row * $col;
+    }
   }
 
-  @else if $class == sm {
+  // sm
+
+  @if $class == sm {
     @media (min-width: 415px) {
-      width: 100%;
+      display: inline-block;
+      @if $row == 1 {
+        width: 100%;
+      }
+      @if $row == auto {
+        width: auto;
+      }
+      @if $col != null {
+        width: 100% / $row * $col;
+      }
     }
   }
 
-  @else if $class == md {
+  // md
+
+  @if $class == md {
     @media (min-width: 668px) {
-      width: 100%;
+      display: inline-block;
+      @if $row == 1 {
+        width: 100%;
+      }
+      @if $row == auto {
+        width: auto;
+      }
+      @if $col != null {
+        width: 100% / $row * $col;
+      }
     }
   }
 
-  @else if $class == lg {
+  // lg
+
+  @if $class == lg {
     @media (min-width: 769px) {
-      width: 100%;
+      display: inline-block;
+      @if $row == 1 {
+        width: 100%;
+      }
+      @if $row == auto {
+        width: auto;
+      }
+      @if $col != null {
+        width: 100% / $row * $col;
+      }
     }
   }
 
-  @else if $class == xl {
+  // xl
+
+  @if $class == xl {
     @media (min-width: 1025px) {
-      width: 100%;
+      display: inline-block;
+      @if $row == 1 {
+        width: 100%;
+      }
+      @if $row == auto {
+        width: auto;
+      }
+      @if $col != null {
+        width: 100% / $row * $col;
+      }
     }
   }
 
