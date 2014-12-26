@@ -1,1 +1,15 @@
 ﻿// gutter
+
+@mixin gutter($gutter: null, $out: null) {
+
+  @if $gutter != null {
+    margin:0 -#{$gutter}px 0 -#{$gutter}px;
+    > * {
+      padding:0 #{$gutter}px;
+    }
+  }
+  @if $out == out {
+    margin: 0;
+  }
+
+}
