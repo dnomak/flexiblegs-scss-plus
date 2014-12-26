@@ -1,0 +1,21 @@
+﻿// align
+
+@mixin align($align: null) {
+
+  @if $align == center {
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+  @if $align == left {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  @if $align == right {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+}

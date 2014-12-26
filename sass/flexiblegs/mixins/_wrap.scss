@@ -1,11 +1,10 @@
 ﻿// wrap
 
-$flexbox-name: flexbox;
+@mixin wrap($flexbox: null) {
 
-@mixin wrap($flexbox-name: none) {
   font-size: 0;
   text-align: center;
-  @if $flexbox-name == flexbox {
+  @if $flexbox == flexbox {
     -webkit-justify-content: center;
     justify-content: center;
     display: -webkit-box;
@@ -29,4 +28,5 @@ $flexbox-name: flexbox;
     vertical-align: top;
     font-size: 1rem;
   }
+
 }
