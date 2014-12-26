@@ -10,3 +10,31 @@
 @-ms-viewport {
   width: device-width;
 }
+
+@mixin size($class) {
+
+  @if $class == xs {
+    @content;
+  }
+  @else if $class == sm {
+    @media (min-width: 415px) {
+      @content;
+    }
+  }
+  @else if $class == md {
+    @media (min-width: 668px) {
+      @content;
+    }
+  }
+  @else if $class == lg {
+    @media (min-width: 769px) {
+      @content;
+    }
+  }
+  @else if $class == xl {
+    @media (min-width: 1025px) {
+      @content;
+    }
+  }
+
+}

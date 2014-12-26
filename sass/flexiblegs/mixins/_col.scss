@@ -1,0 +1,19 @@
+﻿// col
+
+@mixin col($row: null, $col: null) {
+
+  display: inline-block;
+  @if $row == auto {
+    width: auto;
+  }
+  @if $row == 1 {
+    width: 100%;
+  }
+  @if $col != null {
+    width: 100% / $row * $col;
+  }
+  @if $row == hidden {
+    display: none;
+  }
+
+}
