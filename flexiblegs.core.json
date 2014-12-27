@@ -1,12 +1,14 @@
 ﻿{
   "name": "Flexible Grid System",
-  "version": "2.3.5",
-  "format": [
+  "version": "2.3.6",
+  "formats": [
     "css", "sass"
   ],
   "wrap-name": "wrap",
-  "flexbox-name": "flexbox",
+  "col-name": "col",
   "gutter-name": "gutter",
+  "align-name": "align",
+  "flexbox-name": "flexbox",
   "sizes": [
     {
       "name": "xl",

@@ -1,4 +1,4 @@
-﻿// layout
+﻿// Layout
 
 *,
 *:before,
@@ -10,9 +10,7 @@
 @-ms-viewport {
   width: device-width;
 }
-
 @mixin size($class) {
-
   @if $class == xs {
     @content;
   }
@@ -36,5 +34,4 @@
       @content;
     }
   }
-
 }

@@ -1,7 +1,6 @@
 ﻿// col
 
 @mixin col($row: null, $col: null) {
-
   display: inline-block;
   @if $row == auto {
     width: auto;
@@ -15,5 +14,4 @@
   @if $row == hidden {
     display: none;
   }
-
 }

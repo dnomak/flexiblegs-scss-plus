@@ -1,7 +1,13 @@
 ﻿// flexbox
 
+@mixin order($order: 0) {
+  -webkit-box-ordinal-group: $order;
+  -moz-box-ordinal-group: $order;
+  -ms-flex-order: $order;
+  -webkit-order: $order;
+  order: $order;
+}
 @mixin flexbox($flexbox: null) {
-
   @if $flexbox == reverse {
     -webkit-box-direction: reverse;
     -webkit-flex-direction: row-reverse;
@@ -21,32 +27,15 @@
     flex-wrap: wrap;
   }
   @if $flexbox == first {
-    -webkit-box-ordinal-group: -1;
-    -moz-box-ordinal-group: -1;
-    -ms-flex-order: -1;
-    -webkit-order: -1;
-    order: -1;
+    @include order(-1);
   }
   @if $flexbox == no-first {
-    -webkit-box-ordinal-group: 0;
-    -moz-box-ordinal-group: 0;
-    -ms-flex-order: 0;
-    -webkit-order: 0;
-    order: 0;
+    @include order;
   }
   @if $flexbox == last {
-    -webkit-box-ordinal-group: 1;
-    -moz-box-ordinal-group: 1;
-    -ms-flex-order: 1;
-    -webkit-order: 1;
-    order: 1;
+    @include order(1);
   }
   @if $flexbox == no-last {
-    -webkit-box-ordinal-group: 0;
-    -moz-box-ordinal-group: 0;
-    -ms-flex-order: 0;
-    -webkit-order: 0;
-    order: 0;
+    @include order;
   }
-
 }
