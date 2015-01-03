@@ -16,4 +16,25 @@
     justify-content: flex-end;
     text-align: right;
   }
+  @if $align == top {
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    > * {
+      vertical-align: top;
+    }
+  }
+  @if $align == middle {
+    -webkit-align-items: center;
+    align-items: center;
+    > * {
+      vertical-align: middle;
+    }
+  }
+  @if $align == bottom {
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    > * {
+      vertical-align: bottom;
+    }
+  }
 }

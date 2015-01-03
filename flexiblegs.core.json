@@ -1,11 +1,12 @@
 ﻿{
-  "name": "Flexible Grid System",
-  "version": "2.3.6",
+  "name": "Flexible Grid System | Css · Sass · Less",
+  "version": "2.4.0",
   "formats": [
-    "css", "sass"
+    "css", "sass", "less"
   ],
   "wrap-name": "wrap",
   "col-name": "col",
+  "flex-name": "flex",
   "gutter-name": "gutter",
   "align-name": "align",
   "flexbox-name": "flexbox",
@@ -32,25 +33,18 @@
     }
   ],
   "columns": [
-    "auto","1","2","3","4","5","6","7","8","9","10","11","12"
+    "auto","1","2","3","4","5","6","7","8","9","10","11","12","hidden"
   ],
   "gutters": [
     "out","0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"
   ],
-  "tools": [
-    "reverse",
-    "center",
-    "left",
-    "right",
-    "first",
-    "last",
-    "hidden"
-  ],
-  "reverse-name": "reverse",
   "center-name": "center",
   "left-name": "left",
   "right-name": "right",
+  "top-name": "top",
+  "middle-name": "middle",
+  "bottom-name": "bottom",
+  "reverse-name": "reverse",
   "first-name": "first",
-  "last-name": "last",
-  "hidden-name": "hidden"
+  "last-name": "last"
 }

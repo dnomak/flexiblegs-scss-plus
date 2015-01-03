@@ -1,0 +1,16 @@
+﻿// flex
+
+@mixin flex($flex: null) {
+  > * {
+    display: inline-block;
+    @if $flex == auto {
+      width: auto;
+    }
+    @else if $flex == hidden {
+      display: none;
+    }
+    @else {
+      width: 100% / $flex * 1;
+    }
+  }
+}
