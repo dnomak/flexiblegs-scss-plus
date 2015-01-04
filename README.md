@@ -3,8 +3,8 @@
 Flexible Grid System is a Responsive CSS Framework · http://flexible.gs
 
 ##Documentation
-- English - (Preparing)
-- Turkish - (Preparing)
+- English · (Preparing)
+- Turkish · (Preparing)
 
 ##Core Team
 
