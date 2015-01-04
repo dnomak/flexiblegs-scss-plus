@@ -1,27 +1,24 @@
 #[flexible.gs](http://flexible.gs)
 
-Flexible Grid System is a Responsive CSS Framework.
+Flexible Grid System is a Responsive CSS Framework · http://flexible.gs
 
-###Flexible Grid System Documentation
+##Documentation
 - English - (Preparing)
 - Turkish - (Preparing)
 
 ##Core Team
 
 **Doğukan Güven Nomak**
-
 - me@dnomak.com
 - https://twitter.com/dnomak
 - https://github.com/dnomak
 
 **Serdar Doğruyol**
-
 - dogruyolserdar@gmail.com
 - https://twitter.com/sdogruyol
 - https://github.com/sdogruyol
 
 **Ersan Ceylan**
-
 - dogruyolserdar@gmail.com
 - https://twitter.com/dontmeanshitt
 - https://github.com/rsncyln
