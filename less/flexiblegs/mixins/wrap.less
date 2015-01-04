@@ -1,0 +1,30 @@
+﻿// wrap
+
+.wrap() {
+  font-size: 0;
+  text-align: center;
+  > * {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    font-size: 1rem;
+    vertical-align: top;
+  }
+}
+.flexbox() {
+  -webkit-justify-content: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}

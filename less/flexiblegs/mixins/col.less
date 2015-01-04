@@ -1,0 +1,13 @@
+﻿// col
+
+.col(@row) when (@row = auto) {
+  display: inline-block;
+  width: auto;
+}
+.col(@row) when (@row = hidden) {
+  display: none;
+}
+.col(@row, @col) when (isnumber(@row)) {
+  display: inline-block;
+  width: 100% / @row * @col;
+}

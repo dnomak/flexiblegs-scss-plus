@@ -17,7 +17,7 @@
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
   }
-  @if $flexbox == no-reverse {
+  @else if $flexbox == no-reverse {
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -26,16 +26,16 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  @if $flexbox == first {
+  @else if $flexbox == first {
     @include order(-1);
   }
-  @if $flexbox == no-first {
+  @else if $flexbox == no-first {
     @include order;
   }
-  @if $flexbox == last {
+  @else if $flexbox == last {
     @include order(1);
   }
-  @if $flexbox == no-last {
+  @else if $flexbox == no-last {
     @include order;
   }
 }

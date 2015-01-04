@@ -2,14 +2,15 @@
 
 @mixin flex($flex: null) {
   > * {
-    display: inline-block;
     @if $flex == auto {
+      display: inline-block;
       width: auto;
     }
     @else if $flex == hidden {
       display: none;
     }
     @else {
+      display: inline-block;
       width: 100% / $flex * 1;
     }
   }

@@ -1,0 +1,38 @@
+﻿// align
+
+.align(@align) when (@align = center) {
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.align(@align) when (@align = left) {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+.align(@align) when (@align = right) {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+.align(@align) when (@align = top) {
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  > * {
+    vertical-align: top;
+  }
+}
+.align(@align) when (@align = middle) {
+  -webkit-align-items: center;
+  align-items: center;
+  > * {
+    vertical-align: middle;
+  }
+}
+.align(@align) when (@align = bottom) {
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  > * {
+    vertical-align: bottom;
+  }
+}

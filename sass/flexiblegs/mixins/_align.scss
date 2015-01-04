@@ -6,31 +6,31 @@
     justify-content: center;
     text-align: center;
   }
-  @if $align == left {
+  @else if $align == left {
     -webkit-justify-content: flex-start;
     justify-content: flex-start;
     text-align: left;
   }
-  @if $align == right {
+  @else if $align == right {
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
     text-align: right;
   }
-  @if $align == top {
+  @else if $align == top {
     -webkit-align-items: flex-start;
     align-items: flex-start;
     > * {
       vertical-align: top;
     }
   }
-  @if $align == middle {
+  @else if $align == middle {
     -webkit-align-items: center;
     align-items: center;
     > * {
       vertical-align: middle;
     }
   }
-  @if $align == bottom {
+  @else if $align == bottom {
     -webkit-align-items: flex-end;
     align-items: flex-end;
     > * {

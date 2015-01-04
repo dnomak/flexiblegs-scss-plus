@@ -11,10 +11,7 @@
   width: device-width;
 }
 @mixin size($class) {
-  @if $class == xs {
-    @content;
-  }
-  @else if $class == sm {
+  @if $class == sm {
     @media (min-width: 415px) {
       @content;
     }

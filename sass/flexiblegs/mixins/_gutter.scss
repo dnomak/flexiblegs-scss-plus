@@ -2,9 +2,9 @@
 
 @mixin gutter($gutter: null, $out: null) {
   @if $gutter != null {
-    margin:0 -#{$gutter}px 0 -#{$gutter}px;
+    margin:0 -#{$gutter} 0 -#{$gutter};
     > * {
-      padding:0 #{$gutter}px;
+      padding:0 #{$gutter};
     }
   }
   @if $out == out {
