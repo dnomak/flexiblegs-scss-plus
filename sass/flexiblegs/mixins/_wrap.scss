@@ -3,6 +3,7 @@
 @mixin wrap($flexbox: null) {
   font-size: 0;
   text-align: center;
+  display: block;
   @if $flexbox == flexbox {
     -webkit-justify-content: center;
     justify-content: center;
