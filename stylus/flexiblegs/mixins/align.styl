@@ -1,0 +1,30 @@
+﻿// align
+
+align(align)
+  if (align == center)
+    -webkit-justify-content center
+    justify-content center
+    text-align center
+  else if (align == left)
+    -webkit-justify-content flex-start
+    justify-content flex-start
+    text-align left
+  else if (align == right)
+    -webkit-justify-content flex-end
+    justify-content flex-end
+    text-align right
+  else if (align == top)
+    -webkit-align-items flex-start
+    align-items flex-start
+    > *
+      vertical-align top
+  else if (align == middle)
+    -webkit-align-items center
+    align-items center
+    > *
+      vertical-align middle
+  else if (align == bottom)
+    -webkit-align-items flex-end
+    align-items flex-end
+    > *
+      vertical-align bottom
