@@ -1,13 +1,13 @@
 ﻿// gutter
 
 @mixin gutter($gutter: null, $out: null) {
-  @if $gutter != null {
+  @if $gutter {
     margin: 0 -#{$gutter} 0 -#{$gutter};
     > * {
       padding: 0 #{$gutter};
     }
   }
-  @if $out == out {
+  @if $out {
     margin: 0;
   }
 }
