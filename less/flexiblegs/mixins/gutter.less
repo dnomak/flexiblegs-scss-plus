@@ -1,9 +1,9 @@
 ﻿// gutter
 
 .gutter(@gutter) when (isnumber(@gutter)) {
-  margin:0 -@gutter 0 -@gutter;
+  margin: 0 -@gutter 0 -@gutter;
   > * {
-    padding:0 @gutter;
+    padding: 0 @gutter;
   }
 }
 .gutter(@gutter) when (@gutter = out) {

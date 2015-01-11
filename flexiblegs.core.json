@@ -1,8 +1,8 @@
 ﻿{
-  "name": "Flexible Grid System | Css · Sass · Less",
-  "version": "2.4.0",
+  "name": "Flexible Grid System | CSS · Sass · Less · Stylus",
+  "version": "2.4.1",
   "formats": [
-    "css", "sass", "less"
+    "css", "sass", "less", "stylus"
   ],
   "wrap-name": "wrap",
   "col-name": "col",
