@@ -2,7 +2,6 @@
 
 .flex(@flex) when (@flex = auto) {
   > * {
-    display: inline-block;
     width: auto;
   }
 }
@@ -13,7 +12,6 @@
 }
 .flex(@flex) when (isnumber(@flex)) {
   > * {
-    display: inline-block;
     width: 100% / @flex;
   }
 }
