@@ -1,4 +1,4 @@
-﻿/*! Flexible Grid System 2.4.1 | CSS | MIT License | flexible.gs */
+﻿/*! Flexible Grid System 2.4.2 | CSS | MIT License | flexible.gs */
 
 /* wrap · flexbox */
 /* xl · lg · md · sm · xs */
@@ -30,6 +30,7 @@
     min-height: 1px;
     font-size: 1rem;
     vertical-align: top;
+    display: inline-block;
   }
   .flexbox {
     -webkit-justify-content: center;
@@ -51,9 +52,6 @@
 
 /* xs */
 
-  .wrap > * {
-    display: inline-block;
-  }
   .xs-auto {
     width: auto;
   }
@@ -473,9 +471,6 @@
 /* sm */
 
   @media (min-width: 415px) {
-    .wrap > * {
-      display: inline-block;
-    }
     .sm-auto {
       width: auto;
     }
@@ -896,9 +891,6 @@
 /* md */
 
   @media (min-width: 668px) {
-    .wrap > * {
-      display: inline-block;
-    }
     .md-auto {
       width: auto;
     }
@@ -1319,9 +1311,6 @@
 /* lg */
 
   @media (min-width: 769px) {
-    .wrap > * {
-      display: inline-block;
-    }
     .lg-auto {
       width: auto;
     }
@@ -1742,9 +1731,6 @@
 /* xl */
 
   @media (min-width: 1025px) {
-    .wrap > * {
-      display: inline-block;
-    }
     .xl-auto {
       width: auto;
     }
