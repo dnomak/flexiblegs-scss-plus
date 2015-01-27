@@ -2,14 +2,12 @@
 
 @mixin col($row: null, $col: null) {
   @if $row == auto {
-    display: inline-block;
     width: auto;
   }
   @else if $row == hidden {
     display: none;
   }
   @else {
-    display: inline-block;
     width: 100% / $row * $col;
   }
 }
