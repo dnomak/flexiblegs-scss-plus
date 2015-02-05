@@ -6,23 +6,6 @@ Flexible Grid System is a Responsive CSS Framework · http://flexible.gs
 - English · (Preparing)
 - Turkish · (Preparing)
 
-##Core Team
-
-**Doğukan Güven Nomak**
-- me@dnomak.com
-- https://twitter.com/dnomak
-- https://github.com/dnomak
-
-**Serdar Doğruyol**
-- dogruyolserdar@gmail.com
-- https://twitter.com/sdogruyol
-- https://github.com/sdogruyol
-
-**Ersan Ceylan**
-- ersanceylan35@gmail.com
-- https://twitter.com/dontmeanshitt
-- https://github.com/rsncyln
-
 ##License
 - Flexible Grid System is licensed under the MIT license.
   - [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)

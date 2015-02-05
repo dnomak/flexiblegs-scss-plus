@@ -5,11 +5,6 @@
     width: auto;
   }
 }
-.flex(@flex) when (@flex = hidden) {
-  > * {
-    display: none;
-  }
-}
 .flex(@flex) when (isnumber(@flex)) {
   > * {
     width: 100% / @flex;

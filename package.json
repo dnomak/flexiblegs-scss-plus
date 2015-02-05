@@ -1,15 +1,12 @@
-{  
+{
   "name": "flexiblegs",
-  "version": "2.4.2",
-  "description": "Flexible Grid System is a Responsive CSS Framework.",
+  "version": "2.4.3",
+  "description": "Flexible Grid System is a Responsive CSS Framework (Sass, Less and Stylus)",
   "homepage": "http://flexible.gs",
   "author": {
     "name": "Doğukan Güven Nomak",
     "email": "me@dnomak.com"
   },
-  "contributors": [
-    "The Core Flexible.gs Team"
-  ],
   "bugs": {
     "url": "https://github.com/flexiblegs/flexiblegs/issues"
   },
@@ -24,11 +21,12 @@
     }
   ],
   "keywords": [
-    "grid",
-    "less",
-    "sass",
-    "stylus",
+    "css",
     "grid system",
-    "responsive grid system"
+    "responsive design",
+    "flexible grid system",
+    "sass",
+    "less",
+    "stylus"
   ]
 }
