@@ -1,6 +1,6 @@
 ﻿{
   "name": "Flexible Grid System | CSS · Sass · Less · Stylus",
-  "version": "2.4.3",
+  "version": "2.5.0",
   "formats": [
     "css", "sass", "less", "stylus"
   ],
@@ -10,6 +10,7 @@
   "gutter-name": "gutter",
   "align-name": "align",
   "flexbox-name": "flexbox",
+  "layout-name": "size",
   "sizes": [
     {
       "name": "xl",
@@ -46,5 +47,6 @@
   "bottom-name": "bottom",
   "reverse-name": "reverse",
   "first-name": "first",
-  "last-name": "last"
+  "last-name": "last",
+  "not-name": "not"
 }

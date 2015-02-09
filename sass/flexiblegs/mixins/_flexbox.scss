@@ -34,7 +34,7 @@
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
   }
-  @else if $flexbox == no-reverse {
+  @else if $flexbox == not-reverse {
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -46,13 +46,13 @@
   @else if $flexbox == first {
     @include order(-1);
   }
-  @else if $flexbox == no-first {
+  @else if $flexbox == not-first {
     @include order;
   }
   @else if $flexbox == last {
     @include order(1);
   }
-  @else if $flexbox == no-last {
+  @else if $flexbox == not-last {
     @include order;
   }
 }

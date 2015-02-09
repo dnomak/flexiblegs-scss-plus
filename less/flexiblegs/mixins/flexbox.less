@@ -33,7 +33,7 @@
   -ms-flex-wrap: wrap-reverse;
   flex-wrap: wrap-reverse;
 }
-.flexbox(@flexbox) when (@flexbox = no-reverse) {
+.flexbox(@flexbox) when (@flexbox = not-reverse) {
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -45,12 +45,12 @@
 .flexbox(@flexbox) when (@flexbox = first) {
   .order(-1);
 }
-.flexbox(@flexbox) when (@flexbox = no-first) {
+.flexbox(@flexbox) when (@flexbox = not-first) {
   .order;
 }
 .flexbox(@flexbox) when (@flexbox = last) {
   .order(1);
 }
-.flexbox(@flexbox) when (@flexbox = no-last) {
+.flexbox(@flexbox) when (@flexbox = not-last) {
   .order;
 }

@@ -7,26 +7,23 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@-ms-viewport {
-  width: device-width;
-}
-@mixin size($class) {
-  @if $class == sm {
+@mixin size($size) {
+  @if $size == sm {
     @media (min-width: 415px) {
       @content;
     }
   }
-  @else if $class == md {
+  @else if $size == md {
     @media (min-width: 668px) {
       @content;
     }
   }
-  @else if $class == lg {
+  @else if $size == lg {
     @media (min-width: 769px) {
       @content;
     }
   }
-  @else if $class == xl {
+  @else if $size == xl {
     @media (min-width: 1025px) {
       @content;
     }
