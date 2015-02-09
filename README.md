@@ -6,6 +6,24 @@ Flexible Grid System is a Responsive CSS Framework · http://flexible.gs
 - English · (Preparing)
 - Turkish · (Preparing)
 
+### Flexible Grid System for less.js
+[Plugin](https://github.com/bassjobsen/less-plugin-flexiblegs) imports Flexible Grid System before your custom Less code.
+
+**install**
+
+```
+npm install less
+npm install less-plugin-flexiblegs
+```
+
+**usage**
+
+```
+lessc custom.less --flexiblegs
+```
+
+
+
 ##License
 - Flexible Grid System is licensed under the MIT license.
   - [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)
