@@ -13,3 +13,13 @@
     display: inline-block;
   }
 }
+.wrap(@col) when (@col = auto) {
+  > * {
+    width: auto;
+  }
+}
+.wrap(@col) when (isnumber(@col)) {
+  > * {
+    width: 100% / @col;
+  }
+}

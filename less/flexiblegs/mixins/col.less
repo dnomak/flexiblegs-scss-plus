@@ -3,6 +3,12 @@
 .col(@row) when (@row = auto) {
   width: auto;
 }
+.col(@row) when (@row = hidden) {
+  overflow: hidden;
+}
+.col(@row) when (@row = not-hidden) {
+  display: inline-block;
+}
 .col(@row, @col) when (isnumber(@row)) {
   width: 100% / @row * @col;
 }

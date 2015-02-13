@@ -1,58 +1,21 @@
 ﻿// flexbox
 
-@mixin order($order: 0) {
-  -webkit-box-ordinal-group: $order;
-  -moz-box-ordinal-group: $order;
-  -ms-flex-order: $order;
-  -webkit-order: $order;
-  order: $order;
-}
-@mixin flexbox($flexbox: null) {
-  @if $flexbox == null {
-    -webkit-justify-content: center;
-    justify-content: center;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  @else if $flexbox == reverse {
-    -webkit-box-direction: reverse;
-    -webkit-flex-direction: row-reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-    -webkit-flex-wrap: wrap-reverse;
-    -ms-flex-wrap: wrap-reverse;
-    flex-wrap: wrap-reverse;
-  }
-  @else if $flexbox == not-reverse {
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  @else if $flexbox == first {
-    @include order(-1);
-  }
-  @else if $flexbox == not-first {
-    @include order;
-  }
-  @else if $flexbox == last {
-    @include order(1);
-  }
-  @else if $flexbox == not-last {
-    @include order;
-  }
+@mixin flexbox() {
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }

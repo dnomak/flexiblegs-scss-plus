@@ -4,6 +4,12 @@
   @if $row == auto {
     width: auto;
   }
+  @else if $row == hidden {
+    diplay: none;
+  }
+  @else if $row == not-hidden {
+    display: inline-block;
+  }
   @else {
     width: 100% / $row * $col;
   }

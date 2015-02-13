@@ -1,17 +1,13 @@
 ﻿{
-  "name": "Flexible Grid System | CSS · Sass · Less · Stylus",
-  "version": "2.5.0",
+  "name": "flexiblegs",
+  "version": "3.0.0",
   "formats": [
     "css", "sass", "less", "stylus"
   ],
   "wrap-name": "wrap",
-  "col-name": "col",
-  "flex-name": "flex",
-  "gutter-name": "gutter",
-  "align-name": "align",
   "flexbox-name": "flexbox",
   "layout-name": "size",
-  "sizes": [
+  "size": [
     {
       "name": "xl",
       "width": "100%"
@@ -33,20 +29,26 @@
       "width": "414px"
     }
   ],
-  "columns": [
-    "auto","1","2","3","4","5","6","7","8","9","10","11","12"
+  "col-name": "col",
+  "col": [
+    "auto","1","2","3","4","5","6","7","8","9","10","11","12","hidden"
   ],
-  "gutters": [
-    "out","0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"
+  "gutter-name": "gutter",
+  "gutter": [
+    "out","0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"
   ],
-  "center-name": "center",
-  "left-name": "left",
-  "right-name": "right",
+  "align-name": "align",
   "top-name": "top",
   "middle-name": "middle",
   "bottom-name": "bottom",
-  "reverse-name": "reverse",
+  "between-name": "between",
+  "around-name": "around",
+  "baseline-name": "baseline",
+  "center-name": "center",
+  "left-name": "left",
+  "right-name": "right",
   "first-name": "first",
   "last-name": "last",
+  "reverse-name": "reverse",
   "not-name": "not"
 }

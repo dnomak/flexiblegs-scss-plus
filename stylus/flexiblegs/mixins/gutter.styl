@@ -2,8 +2,11 @@
 
 gutter(gutter = false, out = false)
   if gutter
-    margin 0 (- gutter) 0 (- gutter)
+    margin-left (- gutter)
+    margin-right (- gutter)
     > *
-      padding 0 gutter
+      padding-left gutter
+      padding-right gutter
   if out
-    margin 0
+    margin-left 0
+    margin-right 0

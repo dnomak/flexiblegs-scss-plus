@@ -1,15 +1,27 @@
 ﻿// wrap
 
-@mixin wrap {
-  font-size: 0;
-  text-align: center;
-  display: block;
-  > * {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    font-size: 1rem;
-    vertical-align: top;
-    display: inline-block;
+@mixin wrap($col: null) {
+  @if $col == null {
+    font-size: 0;
+    text-align: center;
+    display: block;
+    > * {
+      position: relative;
+      width: 100%;
+      min-height: 1px;
+      font-size: 1rem;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+  @else {
+    > * {
+      @if $col == auto {
+        width: auto;
+      }
+      @else {
+        width: 100% / $col;
+      }
+    }
   }
 }

@@ -1,30 +1,28 @@
 ﻿// Layout
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 @mixin size($size) {
-  @if $size == sm {
-    @media (min-width: 415px) {
+  @if $size == lg {
+    @media (max-width: 1024px) {
       @content;
     }
   }
   @else if $size == md {
-    @media (min-width: 668px) {
+    @media (max-width: 768px) {
       @content;
     }
   }
-  @else if $size == lg {
-    @media (min-width: 769px) {
+  @if $size == sm {
+    @media (max-width: 667px) {
       @content;
     }
   }
-  @else if $size == xl {
-    @media (min-width: 1025px) {
+  @if $size == xs {
+    @media (max-width: 414px) {
       @content;
     }
   }

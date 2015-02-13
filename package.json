@@ -1,7 +1,7 @@
 {
   "name": "flexiblegs",
-  "version": "2.5.0",
-  "description": "Flexible Grid System is a Responsive CSS Framework (Sass, Less and Stylus)",
+  "version": "3.0.0",
+  "description": "Flexible Grid System is a Responsive CSS Framework (CSS, Sass, Less and Stylus)",
   "homepage": "http://flexible.gs",
   "author": {
     "name": "Doğukan Güven Nomak",

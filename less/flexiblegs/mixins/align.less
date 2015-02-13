@@ -1,19 +1,11 @@
 ﻿// align
 
-.align(@align) when (@align = center) {
-  -webkit-justify-content: center;
-  justify-content: center;
-  text-align: center;
-}
-.align(@align) when (@align = left) {
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  text-align: left;
-}
-.align(@align) when (@align = right) {
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
-  text-align: right;
+.order(@order: 0) {
+  -webkit-box-ordinal-group: @order;
+  -moz-box-ordinal-group: @order;
+  -ms-flex-order: @order;
+  -webkit-order: @order;
+  order: @order;
 }
 .align(@align) when (@align = top) {
   -webkit-align-items: flex-start;
@@ -35,4 +27,65 @@
   > * {
     vertical-align: bottom;
   }
+}
+.align(@align) when (@align = between) {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-content: space-between;
+  align-content: space-between;
+}
+.align(@align) when (@align = around) {
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-content: space-around;
+  align-content: space-around;
+}
+.align(@align) when (@align = baseline) {
+  -webkit-align-items: baseline;
+  align-items: baseline;
+}
+.align(@align) when (@align = center) {
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.align(@align) when (@align = left) {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+.align(@align) when (@align = right) {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
+.align(@align) when (@align = first) {
+  .order(-1);
+}
+.align(@align) when (@align = not-first) {
+  .order;
+}
+.align(@align) when (@align = last) {
+  .order(1);
+}
+.align(@align) when (@align = not-last) {
+  .order;
+}
+.align(@align) when (@align = reverse) {
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+}
+.align(@align) when (@align = not-reverse) {
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
