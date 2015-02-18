@@ -1,4 +1,4 @@
-﻿/*! Flexible Grid System 3.0.0 | CSS | MIT License | flexible.gs */
+﻿/*! Flexible Grid System 3.0.1 | CSS | MIT License | flexible.gs */
 
 /* wrap · flexbox */
 /* xl · lg · md · sm · xs */
@@ -48,7 +48,7 @@
 
 /* xl */
 
-  .xl-auto > * {
+  .wrap-xl-auto > * {
     width: auto;
   }
   .xl-1 > * {
@@ -87,7 +87,7 @@
   .xl-12 > * {
     width: 8.333333333333334%;
   }
-  .wrap > .xl-auto {
+  .xl-auto {
     width: auto;
   }
   .xl-1-1 {
@@ -492,7 +492,7 @@
 /* lg */
 
   @media (max-width: 1024px) {
-    .lg-auto > * {
+    .wrap-lg-auto > * {
       width: auto;
     }
     .lg-1 > * {
@@ -531,7 +531,7 @@
     .lg-12 > * {
       width: 8.333333333333334%;
     }
-    .wrap > .lg-auto {
+    .lg-auto {
       width: auto;
     }
     .lg-1-1 {
@@ -937,7 +937,7 @@
 /* md */
 
   @media (max-width: 768px) {
-    .md-auto > * {
+    .wrap-md-auto > * {
       width: auto;
     }
     .md-1 > * {
@@ -976,7 +976,7 @@
     .md-12 > * {
       width: 8.333333333333334%;
     }
-    .wrap > .md-auto {
+    .md-auto {
       width: auto;
     }
     .md-1-1 {
@@ -1382,7 +1382,7 @@
 /* sm */
 
   @media (max-width: 667px) {
-    .sm-auto > * {
+    .wrap-sm-auto > * {
       width: auto;
     }
     .sm-1 > * {
@@ -1421,7 +1421,7 @@
     .sm-12 > * {
       width: 8.333333333333334%;
     }
-    .wrap > .sm-auto {
+    .sm-auto {
       width: auto;
     }
     .sm-1-1 {
@@ -1827,7 +1827,7 @@
 /* xs */
 
   @media (max-width: 414px) {
-    .xs-auto > * {
+    .wrap-xs-auto > * {
       width: auto;
     }
     .xs-1 > * {
@@ -1866,7 +1866,7 @@
     .xs-12 > * {
       width: 8.333333333333334%;
     }
-    .wrap > .xs-auto {
+    .xs-auto {
       width: auto;
     }
     .xs-1-1 {
