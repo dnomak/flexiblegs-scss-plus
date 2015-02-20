@@ -5,7 +5,7 @@
     width: auto;
   }
   @else if $row == hidden {
-    diplay: none;
+    display: none;
   }
   @else if $row == not-hidden {
     display: inline-block;
