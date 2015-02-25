@@ -1,0 +1,12 @@
+﻿// gutter
+
+@mixin gutter($gutter: null, $out: null)
+  @if $gutter
+    margin-left: -#{$gutter}
+    margin-right: -#{$gutter}
+    > *
+      padding-left: #{$gutter}
+      padding-right: #{$gutter}
+  @if $out
+    margin-left: 0
+    margin-right: 0

@@ -5,7 +5,7 @@
     "css"
   ],
   "dynamic": [
-    "scss", "less", "stylus"
+    "sass", "less", "stylus"
   ],
   "container-name": "container",
   "wrap-name": "wrap",
