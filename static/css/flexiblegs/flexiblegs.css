@@ -1,50 +1,54 @@
-﻿/*! Flexible Grid System 3.0.1 | CSS | MIT License | flexible.gs */
+﻿/*! Flexible Grid System 3.0.2 | CSS | MIT License | flexible.gs */
 
+/* container */
 /* wrap · flexbox */
 /* xl · lg · md · sm · xs */
 /* auto, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, hidden */
 /* out, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 · gutter */
 /* top, middle, bottom, between, around, baseline, center, left, right, first, last, reverse */
 
-/* wrap */
-
-  *, *:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .wrap {
-    font-size: 0;
-    text-align: center;
-    display: block;
-  }
-  .wrap > * {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    font-size: 1rem;
-    vertical-align: top;
-    display: inline-block;
-  }
-  .flexbox {
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-content: flex-start;
-    align-content: flex-start;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrap {
+  display: block;
+  font-size: 0;
+  text-align: center;
+}
+.wrap > * {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  font-size: 1rem;
+  vertical-align: top;
+}
+.flexbox {
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
 
 /* xl */
 
