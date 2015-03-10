@@ -1,17 +1,12 @@
-﻿/*! Flexible Grid System 3.0.2 | CSS | MIT License | flexible.gs */
+﻿/*! Flexible Grid System 3.0.3 | CSS | MIT License | flexible.gs */
 
 /* container */
 /* wrap · flexbox */
-/* xl · lg · md · sm · xs */
-/* auto, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, hidden */
+/* xl, lg, md, sm, xs · breakpoint */
+/* auto, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, hidden · col */
 /* out, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 · gutter */
-/* top, middle, bottom, between, around, baseline, center, left, right, first, last, reverse */
+/* top, middle, bottom, between, around, baseline, center, left, right, first, last, reverse · align */
 
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 .container {
   max-width: 1140px;
   margin-left: auto;
@@ -48,6 +43,11 @@
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+[class*="gutter-"] > * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* xl */
