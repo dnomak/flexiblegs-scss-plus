@@ -6,7 +6,7 @@
       @content;
     }
   }
-  @else if $breakpoint == md {
+  @if $breakpoint == md {
     @media (max-width: 768px) {
       @content;
     }
