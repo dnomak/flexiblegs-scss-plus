@@ -1,13 +1,12 @@
 ﻿{
   "name": "flexiblegs",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "static": [
     "css"
   ],
   "dynamic": [
     "sass", "less", "stylus"
   ],
-  "container-name": "container",
   "wrap-name": "wrap",
   "flexbox-name": "flexbox",
   "breakpoint-name": "breakpoint",
