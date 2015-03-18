@@ -1,11 +1,11 @@
 ﻿// col
 
-.col(@row) when (@row = hidden) {
+.col(@col) when (@col = hidden) {
   overflow: hidden;
 }
-.col(@row) when (@row = not-hidden) {
+.col(@col) when (@col = not-hidden) {
   display: inline-block;
 }
-.col(@row, @col) when (isnumber(@row)) {
+.col(@col, @row) when (isnumber(@col)) {
   width: 100% / @row * @col;
 }

@@ -1,9 +1,9 @@
 ﻿// col
 
-@mixin col($row: null, $col: null)
-  @if $row == hidden
+@mixin col($col: null, $row: null)
+  @if $col == hidden
     display: none
-  @else if $row == not-hidden
+  @else if $col == not-hidden
     display: inline-block
   @else
     width: 100% / $row * $col
