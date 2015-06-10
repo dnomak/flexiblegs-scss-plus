@@ -1,10 +1,13 @@
-#[flexible.gs](http://flexible.gs)
+#[Flexible Grid System 4 CSS](http://flexible.gs)
 
-Flexible Grid System is a Responsive CSS Framework (CSS, Sass, Less and Stylus)
+Flexible Grid System is a Responsive CSS Framework
 
 ##Documentation
 - [English](https://github.com/flexiblegs/docs/tree/master/en/) (Preparing)
 - [Turkish](https://github.com/flexiblegs/docs/tree/master/tr/) (Preparing)
+
+##Codepen
+- [http://codepen.io/dnomak/pen/KwWJpm](http://codepen.io/dnomak/pen/KwWJpm?editors=100)
 
 ##License
 - Flexible Grid System is licensed under the MIT license.

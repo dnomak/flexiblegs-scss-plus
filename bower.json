@@ -1,30 +1,24 @@
 {
-  "name": "flexiblegs",
+  "name": "flexiblegs-css",
   "version": "4.0.0",
   "homepage": "http://flexible.gs",
   "authors": [
     "@dnomak"
   ],
-  "description": "Flexible Grid System is a Responsive CSS Framework (CSS, Sass, Less and Stylus)",
-  "main": "static/css/flexiblegs/flexiblegs.css",
+  "description": "Flexible Grid System is a Responsive CSS Framework",
+  "main": "flexiblegs.css",
   "keywords": [
     "css",
+    "sass",
+    "scss",
     "grid",
     "responsive",
     "framework",
     "flexible",
-    "less",
-    "sass",
-    "scss",
-    "stylus",
     "flexbox"
   ],
   "license": "MIT",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "/.*"
   ]
 }
