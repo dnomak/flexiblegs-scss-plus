@@ -18,8 +18,8 @@ $ bower install --save flexiblegs-css
 ```
 
 ##Documentation
-- [English](https://github.com/flexiblegs/docs/tree/master/en/) (Preparing)
-- [Turkish](https://github.com/flexiblegs/docs/tree/master/tr/) (Preparing)
+- [English](https://github.com/flexiblegs/flexiblegs-docs/tree/master/en/) (Preparing)
+- [Turkish](https://github.com/flexiblegs/flexiblegs-docs/tree/master/tr/) (Preparing)
 
 ##CodePen
 - [http://codepen.io/dnomak/pen/KwWJpm](http://codepen.io/dnomak/pen/KwWJpm?editors=100)
