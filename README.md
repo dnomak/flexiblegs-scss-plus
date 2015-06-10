@@ -3,7 +3,7 @@
 Flexible Grid System is a Responsive CSS Framework
 
 ##Install
-- [Download](https://raw.githubusercontent.com/flexiblegs/css/master/flexiblegs.min.css)
+[Download](https://raw.githubusercontent.com/flexiblegs/css/master/flexiblegs.min.css)
 ```html
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@ Flexible Grid System is a Responsive CSS Framework
 </head>
 ```
 
-- [Bower](http://bower.io)
+[Bower](http://bower.io)
 ```
 $ bower install --save flexiblegs-css
 ```
