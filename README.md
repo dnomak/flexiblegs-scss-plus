@@ -6,7 +6,7 @@ Flexible Grid System is a Responsive CSS Framework
 - [English](https://github.com/flexiblegs/docs/tree/master/en/) (Preparing)
 - [Turkish](https://github.com/flexiblegs/docs/tree/master/tr/) (Preparing)
 
-##Codepen
+##CodePen
 - [http://codepen.io/dnomak/pen/KwWJpm](http://codepen.io/dnomak/pen/KwWJpm?editors=100)
 
 ##License
