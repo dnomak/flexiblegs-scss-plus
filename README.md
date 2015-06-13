@@ -6,7 +6,10 @@ Flexible Grid System is a Responsive CSS Framework
 
 ####[Download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-css/master/flexiblegs.min.css)
 ```html
-<link rel="stylesheet" href="flexiblegs.min.css">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="flexiblegs.min.css">
+</head>
 ```
 
 ####[Bower](http://bower.io)
