@@ -1,6 +1,6 @@
 #[Flexible Grid System 4 CSS](http://flexible.gs)
 
-Flexible Grid System is a Responsive CSS Framework
+Flexible Grid System 4 CSS
 
 ##Install
 
