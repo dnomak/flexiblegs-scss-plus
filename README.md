@@ -22,7 +22,8 @@ $ bower install --save flexiblegs-css
 - [Turkish](https://github.com/flexiblegs/flexiblegs-docs/tree/master/tr/) (Preparing)
 
 ##CodePen
-- [http://codepen.io/dnomak/pen/KwWJpm](http://codepen.io/dnomak/pen/KwWJpm?editors=100)
+- Flexible Grid System 4 CSS
+  - [http://codepen.io/dnomak/pen/KwWJpm](http://codepen.io/dnomak/pen/KwWJpm?editors=100)
 
 ##License
 - Flexible Grid System is licensed under the MIT license.
