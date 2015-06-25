@@ -1,11 +1,11 @@
 {
   "name": "flexiblegs-css",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "homepage": "http://flexible.gs",
   "authors": [
     "@dnomak"
   ],
-  "description": "Flexible Grid System 4 CSS",
+  "description": "Flexible Grid System CSS",
   "main": "flexiblegs.css",
   "keywords": [
     "css",

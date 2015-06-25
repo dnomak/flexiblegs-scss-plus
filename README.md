@@ -1,6 +1,6 @@
 #[flexiblegs-css](http://flexible.gs)
 
-Flexible Grid System 4 CSS
+Flexible Grid System CSS
 
 ##Install
 
