@@ -1,6 +1,6 @@
 {
   "name": "flexiblegs-css",
-  "version": "4.0.1",
+  "version": "5.0.0",
   "homepage": "http://flexible.gs",
   "authors": [
     "@dnomak"
@@ -11,6 +11,8 @@
     "css",
     "sass",
     "scss",
+    "less",
+    "stylus",
     "grid",
     "responsive",
     "framework",
