@@ -1,4 +1,4 @@
-﻿/* Flexible Grid System 5 | CSS | MIT License | flexible.gs */
+﻿/* Flexible Grid System 5.1.0 | CSS | MIT License | flexible.gs */
 
 .wrap {
   display: block;
@@ -249,57 +249,67 @@
   padding-left: 0;
   padding-right: 0;
 }
-.xl-gutter-5 {
-  margin-left: -5px;
-  margin-right: -5px;
+.xl-gutter-0.xl-outside {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
-.xl-gutter-5 > * {
-  padding-left: 5px;
-  padding-right: 5px;
+.xl-gutter-8 {
+  margin-left: -4px;
+  margin-right: -4px;
 }
-.xl-gutter-10 {
-  margin-left: -10px;
-  margin-right: -10px;
+.xl-gutter-8 > * {
+  padding-left: 4px;
+  padding-right: 4px;
 }
-.xl-gutter-10 > * {
-  padding-left: 10px;
-  padding-right: 10px;
+.xl-gutter-8.xl-outside {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 4px;
+  padding-right: 4px;
 }
-.xl-gutter-15 {
-  margin-left: -15px;
-  margin-right: -15px;
+.xl-gutter-16 {
+  margin-left: -8px;
+  margin-right: -8px;
 }
-.xl-gutter-15 > * {
-  padding-left: 15px;
-  padding-right: 15px;
+.xl-gutter-16 > * {
+  padding-left: 8px;
+  padding-right: 8px;
 }
-.xl-gutter-20 {
+.xl-gutter-16.xl-outside {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.xl-gutter-24 {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+.xl-gutter-24 > * {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.xl-gutter-24.xl-outside {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.xl-gutter-40 {
   margin-left: -20px;
   margin-right: -20px;
 }
-.xl-gutter-20 > * {
+.xl-gutter-40 > * {
   padding-left: 20px;
   padding-right: 20px;
 }
-.xl-gutter-25 {
-  margin-left: -25px;
-  margin-right: -25px;
-}
-.xl-gutter-25 > * {
-  padding-left: 25px;
-  padding-right: 25px;
-}
-.xl-gutter-30 {
-  margin-left: -30px;
-  margin-right: -30px;
-}
-.xl-gutter-30 > * {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.xl-gutter-outside {
+.xl-gutter-40.xl-outside {
   margin-left: 0;
   margin-right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .xl-top {
   -webkit-align-content: flex-start;
@@ -622,57 +632,67 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .lg-gutter-5 {
-    margin-left: -5px;
-    margin-right: -5px;
+  .lg-gutter-0.lg-outside {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
-  .lg-gutter-5 > * {
-    padding-left: 5px;
-    padding-right: 5px;
+  .lg-gutter-8 {
+    margin-left: -4px;
+    margin-right: -4px;
   }
-  .lg-gutter-10 {
-    margin-left: -10px;
-    margin-right: -10px;
+  .lg-gutter-8 > * {
+    padding-left: 4px;
+    padding-right: 4px;
   }
-  .lg-gutter-10 > * {
-    padding-left: 10px;
-    padding-right: 10px;
+  .lg-gutter-8.lg-outside {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 4px;
+    padding-right: 4px;
   }
-  .lg-gutter-15 {
-    margin-left: -15px;
-    margin-right: -15px;
+  .lg-gutter-16 {
+    margin-left: -8px;
+    margin-right: -8px;
   }
-  .lg-gutter-15 > * {
-    padding-left: 15px;
-    padding-right: 15px;
+  .lg-gutter-16 > * {
+    padding-left: 8px;
+    padding-right: 8px;
   }
-  .lg-gutter-20 {
+  .lg-gutter-16.lg-outside {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .lg-gutter-24 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .lg-gutter-24 > * {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .lg-gutter-24.lg-outside {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .lg-gutter-40 {
     margin-left: -20px;
     margin-right: -20px;
   }
-  .lg-gutter-20 > * {
+  .lg-gutter-40 > * {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .lg-gutter-25 {
-    margin-left: -25px;
-    margin-right: -25px;
-  }
-  .lg-gutter-25 > * {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-  .lg-gutter-30 {
-    margin-left: -30px;
-    margin-right: -30px;
-  }
-  .lg-gutter-30 > * {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .lg-gutter-outside {
+  .lg-gutter-40.lg-outside {
     margin-left: 0;
     margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .lg-top {
     -webkit-align-content: flex-start;
@@ -996,57 +1016,75 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .md-gutter-5 {
-    margin-left: -5px;
-    margin-right: -5px;
+  .md-gutter-0.md-outside {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
-  .md-gutter-5 > * {
-    padding-left: 5px;
-    padding-right: 5px;
+  .md-gutter-8 {
+    margin-left: -4px;
+    margin-right: -4px;
   }
-  .md-gutter-10 {
-    margin-left: -10px;
-    margin-right: -10px;
+  .md-gutter-8 > * {
+    padding-left: 4px;
+    padding-right: 4px;
   }
-  .md-gutter-10 > * {
-    padding-left: 10px;
-    padding-right: 10px;
+  .md-gutter-8.md-outside {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 4px;
+    padding-right: 4px;
   }
-  .md-gutter-15 {
-    margin-left: -15px;
-    margin-right: -15px;
+  .md-gutter-16 {
+    margin-left: -8px;
+    margin-right: -8px;
   }
-  .md-gutter-15 > * {
-    padding-left: 15px;
-    padding-right: 15px;
+  .md-gutter-16 > * {
+    padding-left: 8px;
+    padding-right: 8px;
   }
-  .md-gutter-20 {
+  .md-gutter-16.md-outside {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .md-gutter-24 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .md-gutter-24 > * {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .md-gutter-24.md-outside {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .md-gutter-40 {
     margin-left: -20px;
     margin-right: -20px;
   }
-  .md-gutter-20 > * {
+  .md-gutter-40 > * {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .md-gutter-25 {
-    margin-left: -25px;
-    margin-right: -25px;
-  }
-  .md-gutter-25 > * {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-  .md-gutter-30 {
-    margin-left: -30px;
-    margin-right: -30px;
-  }
-  .md-gutter-30 > * {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .md-gutter-outside {
+  .md-gutter-40.md-outside {
     margin-left: 0;
     margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .md-top {
+    -webkit-align-content: flex-start;
+    -ms-align-content: flex-start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
   }
   .md-top > * {
     vertical-align: top;
@@ -1362,57 +1400,67 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .sm-gutter-5 {
-    margin-left: -5px;
-    margin-right: -5px;
+  .sm-gutter-0.sm-outside {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
-  .sm-gutter-5 > * {
-    padding-left: 5px;
-    padding-right: 5px;
+  .sm-gutter-8 {
+    margin-left: -4px;
+    margin-right: -4px;
   }
-  .sm-gutter-10 {
-    margin-left: -10px;
-    margin-right: -10px;
+  .sm-gutter-8 > * {
+    padding-left: 4px;
+    padding-right: 4px;
   }
-  .sm-gutter-10 > * {
-    padding-left: 10px;
-    padding-right: 10px;
+  .sm-gutter-8.sm-outside {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 4px;
+    padding-right: 4px;
   }
-  .sm-gutter-15 {
-    margin-left: -15px;
-    margin-right: -15px;
+  .sm-gutter-16 {
+    margin-left: -8px;
+    margin-right: -8px;
   }
-  .sm-gutter-15 > * {
-    padding-left: 15px;
-    padding-right: 15px;
+  .sm-gutter-16 > * {
+    padding-left: 8px;
+    padding-right: 8px;
   }
-  .sm-gutter-20 {
+  .sm-gutter-16.sm-outside {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .sm-gutter-24 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .sm-gutter-24 > * {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .sm-gutter-24.sm-outside {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .sm-gutter-40 {
     margin-left: -20px;
     margin-right: -20px;
   }
-  .sm-gutter-20 > * {
+  .sm-gutter-40 > * {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .sm-gutter-25 {
-    margin-left: -25px;
-    margin-right: -25px;
-  }
-  .sm-gutter-25 > * {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-  .sm-gutter-30 {
-    margin-left: -30px;
-    margin-right: -30px;
-  }
-  .sm-gutter-30 > * {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .sm-gutter-outside {
+  .sm-gutter-40.sm-outside {
     margin-left: 0;
     margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .sm-top {
     -webkit-align-content: flex-start;
@@ -1736,57 +1784,67 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .xs-gutter-5 {
-    margin-left: -5px;
-    margin-right: -5px;
+  .xs-gutter-0.xs-outside {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
-  .xs-gutter-5 > * {
-    padding-left: 5px;
-    padding-right: 5px;
+  .xs-gutter-8 {
+    margin-left: -4px;
+    margin-right: -4px;
   }
-  .xs-gutter-10 {
-    margin-left: -10px;
-    margin-right: -10px;
+  .xs-gutter-8 > * {
+    padding-left: 4px;
+    padding-right: 4px;
   }
-  .xs-gutter-10 > * {
-    padding-left: 10px;
-    padding-right: 10px;
+  .xs-gutter-8.xs-outside {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 4px;
+    padding-right: 4px;
   }
-  .xs-gutter-15 {
-    margin-left: -15px;
-    margin-right: -15px;
+  .xs-gutter-16 {
+    margin-left: -8px;
+    margin-right: -8px;
   }
-  .xs-gutter-15 > * {
-    padding-left: 15px;
-    padding-right: 15px;
+  .xs-gutter-16 > * {
+    padding-left: 8px;
+    padding-right: 8px;
   }
-  .xs-gutter-20 {
+  .xs-gutter-16.xs-outside {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .xs-gutter-24 {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+  .xs-gutter-24 > * {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .xs-gutter-24.xs-outside {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .xs-gutter-40 {
     margin-left: -20px;
     margin-right: -20px;
   }
-  .xs-gutter-20 > * {
+  .xs-gutter-40 > * {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .xs-gutter-25 {
-    margin-left: -25px;
-    margin-right: -25px;
-  }
-  .xs-gutter-25 > * {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-  .xs-gutter-30 {
-    margin-left: -30px;
-    margin-right: -30px;
-  }
-  .xs-gutter-30 > * {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .xs-gutter-outside {
+  .xs-gutter-40.xs-outside {
     margin-left: 0;
     margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .xs-top {
     -webkit-align-content: flex-start;
