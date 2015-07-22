@@ -12,43 +12,41 @@ Flexible Grid System CSS
 </head>
 ```
 
-###[Bower](http://bower.io)
+###[npm](https://www.npmjs.com)
 ```
-$ bower install flexiblegs-css --save
+$ npm install --save flexiblegs-css
+```
+
+
+###[bower](http://bower.io)
+```
+$ bower install --save flexiblegs-css
 ```
 
 ##Documentation
 - [English](https://github.com/flexiblegs/flexiblegs-docs/tree/master/en/) (Preparing)
 - [Turkish](https://github.com/flexiblegs/flexiblegs-docs/tree/master/tr/) (Preparing)
 
-##Repositories
+##Links
 
-###Static
-- Flexible Grid System **CSS**
-  - [https://github.com/flexiblegs/flexiblegs-css](https://github.com/flexiblegs/flexiblegs-css)
-  - [http://codepen.io/dnomak/pen/KwWJpm](http://codepen.io/dnomak/pen/KwWJpm?editors=100)
-- Flexible Grid System **BEM CSS**
-  - [https://github.com/flexiblegs/flexiblegs-bem-css](https://github.com/flexiblegs/flexiblegs-bem-css)
-  - [http://codepen.io/dnomak/pen/wayPxJ](http://codepen.io/dnomak/pen/wayPxJ?editors=100)
-- ~~Flexible Grid System **Scss**~~
-  - [~~https://github.com/flexiblegs/flexiblegs-scss~~](https://github.com/flexiblegs/flexiblegs-scss)
-- ~~Flexible Grid System **Sass**~~
-- ~~Flexible Grid System **Less**~~
-- ~~Flexible Grid System **Stylus**~~
-
-###Dynamic
-- Flexible Grid System **Scss Plus**
-  - [https://github.com/flexiblegs/flexiblegs-scss-plus](https://github.com/flexiblegs/flexiblegs-scss-plus)
-  - [http://codepen.io/dnomak/pen/wBzdzj](http://codepen.io/dnomak/pen/wBzdzj?editors=110)
-- Flexible Grid System **Sass Plus**
-  - [https://github.com/flexiblegs/flexiblegs-sass-plus](https://github.com/flexiblegs/flexiblegs-sass-plus)
-  - [http://codepen.io/dnomak/pen/eNEOvP](http://codepen.io/dnomak/pen/eNEOvP?editors=110)
-- Flexible Grid System **Less Plus**
-  - [https://github.com/flexiblegs/flexiblegs-less-plus](https://github.com/flexiblegs/flexiblegs-less-plus)
-  - [http://codepen.io/dnomak/pen/yyVXQa](http://codepen.io/dnomak/pen/yyVXQa?editors=110)
-- Flexible Grid System **Stylus Plus**
-  - [https://github.com/flexiblegs/flexiblegs-stylus-plus](https://github.com/flexiblegs/flexiblegs-stylus-plus)
-  - [http://codepen.io/dnomak/pen/EaZPYw](http://codepen.io/dnomak/pen/EaZPYw?editors=110)
+- Static
+  - [Flexible Grid System **CSS**](https://github.com/flexiblegs/flexiblegs-css)
+    - [CodePen](http://codepen.io/dnomak/pen/KwWJpm?editors=100)
+  - [Flexible Grid System **BEM CSS**](https://github.com/flexiblegs/flexiblegs-bem-css)
+    - [CodePen](http://codepen.io/dnomak/pen/wayPxJ?editors=100)
+  - [~~Flexible Grid System **Scss**~~](https://github.com/flexiblegs/flexiblegs-scss)
+  - ~~Flexible Grid System **Sass**~~
+  - ~~Flexible Grid System **Less**~~
+  - ~~Flexible Grid System **Stylus**~~
+- Dynamic
+  - [Flexible Grid System **Scss Plus**](https://github.com/flexiblegs/flexiblegs-scss-plus)
+    - [CodePen](http://codepen.io/dnomak/pen/wBzdzj?editors=110)
+  - [Flexible Grid System **Sass Plus**](https://github.com/flexiblegs/flexiblegs-sass-plus)
+    - [CodePen](http://codepen.io/dnomak/pen/eNEOvP?editors=110)
+  - [Flexible Grid System **Less Plus**](https://github.com/flexiblegs/flexiblegs-less-plus)
+    - [CodePen](http://codepen.io/dnomak/pen/yyVXQa?editors=110)
+  - [Flexible Grid System **Stylus Plus**](https://github.com/flexiblegs/flexiblegs-stylus-plus)
+    - [CodePen](http://codepen.io/dnomak/pen/EaZPYw?editors=110)
 
 ##License
 - Flexible Grid System is licensed under the MIT license.

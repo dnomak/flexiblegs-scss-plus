@@ -4,6 +4,10 @@
   "homepage": "http://flexible.gs",
   "description": "Flexible Grid System CSS",
   "main": "flexiblegs.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flexiblegs/flexiblegs-css.git"
+  },
   "keywords": [
     "css",
     "sass",
@@ -17,13 +21,9 @@
     "flexbox",
     "flex"
   ],
-  "authors": [
-    "@dnomak"
-  ],
+  "author": "@dnomak",
   "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components"
-  ]
+  "bugs": {
+    "url": "https://github.com/flexiblegs/flexiblegs-css/issues"
+  }
 }

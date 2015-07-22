@@ -1,4 +1,4 @@
-﻿/* Flexible Grid System 5.2.0 | CSS | MIT License | flexible.gs */
+﻿/* Flexible Grid System 5.3.0 | CSS | MIT License | flexible.gs */
 
 .wrap {
   display: block;
@@ -8,26 +8,6 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-.flexbox {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: flex-start;
-  -ms-justify-content: flex-start;
-  justify-content: flex-start;
-  -webkit-align-content: center;
-  -ms-align-content: center;
-  align-content: center;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
 }
 .col {
   display: inline-block;
@@ -42,18 +22,72 @@
 
 /* xl */
 
+  .xl-normal {
+    display: block;
+    table-layout: auto;
+    -webkit-flex-direction: initial;
+    -ms-flex-direction: initial;
+    flex-direction: initial;
+    -webkit-flex-wrap: initial;
+    -ms-flex-wrap: initial;
+    flex-wrap: initial;
+    -webkit-justify-content: initial;
+    -ms-justify-content: initial;
+    justify-content: initial;
+    -webkit-align-content: initial;
+    -ms-align-content: initial;
+    align-content: initial;
+    -webkit-align-items: initial;
+    -ms-align-items: initial;
+    align-items: initial;
+  }
+  .xl-normal {
+    display: inline-block;
+  }
   .xl-table {
     display: table;
     table-layout: fixed;
+    -webkit-flex-direction: initial;
+    -ms-flex-direction: initial;
+    flex-direction: initial;
+    -webkit-flex-wrap: initial;
+    -ms-flex-wrap: initial;
+    flex-wrap: initial;
+    -webkit-justify-content: initial;
+    -ms-justify-content: initial;
+    justify-content: initial;
+    -webkit-align-content: initial;
+    -ms-align-content: initial;
+    align-content: initial;
+    -webkit-align-items: initial;
+    -ms-align-items: initial;
+    align-items: initial;
   }
   .xl-table > * {
     display: table-cell;
   }
-  .xl-not-table {
-    display: block;
+  .xl-flexbox {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     table-layout: auto;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-content: center;
+    -ms-align-content: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
   }
-  .xl-not-table > * {
+  .xl-flexbox > * {
     display: inline-block;
   }
   .xl-auto > * {
@@ -454,18 +488,72 @@
 /* lg */
 
   @media (max-width: 1024px) {
+    .lg-normal {
+      display: block;
+      table-layout: auto;
+      -webkit-flex-direction: initial;
+      -ms-flex-direction: initial;
+      flex-direction: initial;
+      -webkit-flex-wrap: initial;
+      -ms-flex-wrap: initial;
+      flex-wrap: initial;
+      -webkit-justify-content: initial;
+      -ms-justify-content: initial;
+      justify-content: initial;
+      -webkit-align-content: initial;
+      -ms-align-content: initial;
+      align-content: initial;
+      -webkit-align-items: initial;
+      -ms-align-items: initial;
+      align-items: initial;
+    }
+    .lg-normal {
+      display: inline-block;
+    }
     .lg-table {
       display: table;
       table-layout: fixed;
+      -webkit-flex-direction: initial;
+      -ms-flex-direction: initial;
+      flex-direction: initial;
+      -webkit-flex-wrap: initial;
+      -ms-flex-wrap: initial;
+      flex-wrap: initial;
+      -webkit-justify-content: initial;
+      -ms-justify-content: initial;
+      justify-content: initial;
+      -webkit-align-content: initial;
+      -ms-align-content: initial;
+      align-content: initial;
+      -webkit-align-items: initial;
+      -ms-align-items: initial;
+      align-items: initial;
     }
     .lg-table > * {
       display: table-cell;
     }
-    .lg-not-table {
-      display: block;
+    .lg-flexbox {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
       table-layout: auto;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: flex-start;
+      -ms-justify-content: flex-start;
+      justify-content: flex-start;
+      -webkit-align-content: center;
+      -ms-align-content: center;
+      align-content: center;
+      -webkit-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
     }
-    .lg-not-table > * {
+    .lg-flexbox > * {
       display: inline-block;
     }
     .lg-auto > * {
@@ -867,18 +955,72 @@
 /* md */
 
   @media (max-width: 768px) {
+    .md-normal {
+      display: block;
+      table-layout: auto;
+      -webkit-flex-direction: initial;
+      -ms-flex-direction: initial;
+      flex-direction: initial;
+      -webkit-flex-wrap: initial;
+      -ms-flex-wrap: initial;
+      flex-wrap: initial;
+      -webkit-justify-content: initial;
+      -ms-justify-content: initial;
+      justify-content: initial;
+      -webkit-align-content: initial;
+      -ms-align-content: initial;
+      align-content: initial;
+      -webkit-align-items: initial;
+      -ms-align-items: initial;
+      align-items: initial;
+    }
+    .md-normal {
+      display: inline-block;
+    }
     .md-table {
       display: table;
       table-layout: fixed;
+      -webkit-flex-direction: initial;
+      -ms-flex-direction: initial;
+      flex-direction: initial;
+      -webkit-flex-wrap: initial;
+      -ms-flex-wrap: initial;
+      flex-wrap: initial;
+      -webkit-justify-content: initial;
+      -ms-justify-content: initial;
+      justify-content: initial;
+      -webkit-align-content: initial;
+      -ms-align-content: initial;
+      align-content: initial;
+      -webkit-align-items: initial;
+      -ms-align-items: initial;
+      align-items: initial;
     }
     .md-table > * {
       display: table-cell;
     }
-    .md-not-table {
-      display: block;
+    .md-flexbox {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
       table-layout: auto;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: flex-start;
+      -ms-justify-content: flex-start;
+      justify-content: flex-start;
+      -webkit-align-content: center;
+      -ms-align-content: center;
+      align-content: center;
+      -webkit-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
     }
-    .md-not-table > * {
+    .md-flexbox > * {
       display: inline-block;
     }
     .md-auto > * {
@@ -1280,18 +1422,72 @@
 /* sm */
 
   @media (max-width: 667px) {
+    .sm-normal {
+      display: block;
+      table-layout: auto;
+      -webkit-flex-direction: initial;
+      -ms-flex-direction: initial;
+      flex-direction: initial;
+      -webkit-flex-wrap: initial;
+      -ms-flex-wrap: initial;
+      flex-wrap: initial;
+      -webkit-justify-content: initial;
+      -ms-justify-content: initial;
+      justify-content: initial;
+      -webkit-align-content: initial;
+      -ms-align-content: initial;
+      align-content: initial;
+      -webkit-align-items: initial;
+      -ms-align-items: initial;
+      align-items: initial;
+    }
+    .sm-normal {
+      display: inline-block;
+    }
     .sm-table {
       display: table;
       table-layout: fixed;
+      -webkit-flex-direction: initial;
+      -ms-flex-direction: initial;
+      flex-direction: initial;
+      -webkit-flex-wrap: initial;
+      -ms-flex-wrap: initial;
+      flex-wrap: initial;
+      -webkit-justify-content: initial;
+      -ms-justify-content: initial;
+      justify-content: initial;
+      -webkit-align-content: initial;
+      -ms-align-content: initial;
+      align-content: initial;
+      -webkit-align-items: initial;
+      -ms-align-items: initial;
+      align-items: initial;
     }
     .sm-table > * {
       display: table-cell;
     }
-    .sm-not-table {
-      display: block;
+    .sm-flexbox {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
       table-layout: auto;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: flex-start;
+      -ms-justify-content: flex-start;
+      justify-content: flex-start;
+      -webkit-align-content: center;
+      -ms-align-content: center;
+      align-content: center;
+      -webkit-align-items: center;
+      -ms-align-items: center;
+      align-items: center;
     }
-    .sm-not-table > * {
+    .sm-flexbox > * {
       display: inline-block;
     }
     .sm-auto > * {
