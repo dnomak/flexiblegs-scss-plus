@@ -4,7 +4,7 @@ Flexible Grid System CSS
 
 ## Install
 
-### [download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-css/master/flexiblegs.min.css)
+### [Download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-css/master/flexiblegs.min.css)
 ```html
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@ Flexible Grid System CSS
 </head>
 ```
 
-### [bower](http://bower.io)
+### [Bower](http://bower.io)
 ```
 $ bower install --save flexiblegs-css
 ```
