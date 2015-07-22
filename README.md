@@ -12,12 +12,6 @@ Flexible Grid System CSS
 </head>
 ```
 
-### [npm](https://www.npmjs.com)
-```
-$ npm install --save flexiblegs-css
-```
-
-
 ### [bower](http://bower.io)
 ```
 $ bower install --save flexiblegs-css
