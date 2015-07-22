@@ -1,10 +1,10 @@
-#[flexiblegs-css](http://flexible.gs)
+# [flexiblegs-css](http://flexible.gs)
 
 Flexible Grid System CSS
 
-##Install
+## Install
 
-###[Download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-css/master/flexiblegs.min.css)
+### [Download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-css/master/flexiblegs.min.css)
 ```html
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,22 +12,22 @@ Flexible Grid System CSS
 </head>
 ```
 
-###[npm](https://www.npmjs.com)
+### [npm](https://www.npmjs.com)
 ```
 $ npm install --save flexiblegs-css
 ```
 
 
-###[bower](http://bower.io)
+### [bower](http://bower.io)
 ```
 $ bower install --save flexiblegs-css
 ```
 
-##Documentation
+## Documentation
 - [English](https://github.com/flexiblegs/flexiblegs-docs/tree/master/en/) (Preparing)
 - [Turkish](https://github.com/flexiblegs/flexiblegs-docs/tree/master/tr/) (Preparing)
 
-##Links
+## Links
 
 - Static
   - [Flexible Grid System **CSS**](https://github.com/flexiblegs/flexiblegs-css)
@@ -48,7 +48,7 @@ $ bower install --save flexiblegs-css
   - [Flexible Grid System **Stylus Plus**](https://github.com/flexiblegs/flexiblegs-stylus-plus)
     - [CodePen](http://codepen.io/dnomak/pen/EaZPYw?editors=110)
 
-##License
+## License
 - Flexible Grid System is licensed under the MIT license.
   - [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)
 - Flexible Grid System documentation is licensed under a Creative Commons Attribution 4.0 International License.
