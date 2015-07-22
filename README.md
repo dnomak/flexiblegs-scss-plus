@@ -4,7 +4,7 @@ Flexible Grid System CSS
 
 ## Install
 
-### [Download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-css/master/flexiblegs.min.css)
+### [download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-css/master/flexiblegs.min.css)
 ```html
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
