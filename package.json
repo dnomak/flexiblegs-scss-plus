@@ -3,11 +3,6 @@
   "version": "5.3.0",
   "homepage": "http://flexible.gs",
   "description": "Flexible Grid System CSS",
-  "main": "flexiblegs.css",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/flexiblegs/flexiblegs-css.git"
-  },
   "keywords": [
     "css",
     "sass",
@@ -21,6 +16,12 @@
     "flexbox",
     "flex"
   ],
+  "main": "flexiblegs.css",
+  "style": "flexiblegs.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flexiblegs/flexiblegs-css.git"
+  },
   "author": "@dnomak",
   "license": "MIT",
   "bugs": {

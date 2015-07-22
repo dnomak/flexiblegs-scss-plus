@@ -1,0 +1,5 @@
+**/.*
+node_modules
+bower_components
+LICENCE.md
+README.md
