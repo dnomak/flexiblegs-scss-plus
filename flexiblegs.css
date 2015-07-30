@@ -41,7 +41,7 @@
     -ms-align-items: initial;
     align-items: initial;
   }
-  .xl-normal {
+  .xl-normal > * {
     display: inline-block;
   }
   .xl-table {
@@ -507,7 +507,7 @@
       -ms-align-items: initial;
       align-items: initial;
     }
-    .lg-normal {
+    .lg-normal > * {
       display: inline-block;
     }
     .lg-table {
@@ -974,7 +974,7 @@
       -ms-align-items: initial;
       align-items: initial;
     }
-    .md-normal {
+    .md-normal > * {
       display: inline-block;
     }
     .md-table {
@@ -1441,7 +1441,7 @@
       -ms-align-items: initial;
       align-items: initial;
     }
-    .sm-normal {
+    .sm-normal > * {
       display: inline-block;
     }
     .sm-table {
