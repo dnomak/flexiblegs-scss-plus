@@ -7,7 +7,7 @@ Flexible Grid System CSS
 ### [Download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-css/master/flexiblegs.css)
 ```html
 <head>
-  <link rel="stylesheet" href="flexiblegs.min.css">
+  <link rel="stylesheet" href="flexiblegs.css">
 </head>
 ```
 
