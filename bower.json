@@ -1,10 +1,12 @@
 {
-  "name": "flexiblegs-css",
+  "name": "flexiblegs-scss",
   "version": "5.3.4",
   "homepage": "http://flexible.gs",
-  "description": "Flexible Grid System CSS",
+  "description": "Flexible Grid System Scss",
   "keywords": [
     "css",
+    "sass",
+    "scss",
     "grid",
     "responsive",
     "framework",
@@ -12,7 +14,7 @@
     "flexbox",
     "flex"
   ],
-  "main": "flexiblegs.css",
+  "main": "flexiblegs.scss",
   "authors": [
     "@dnomak"
   ],

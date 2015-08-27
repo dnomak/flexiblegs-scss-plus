@@ -1,19 +1,35 @@
-# [flexiblegs-css](http://flexible.gs)
+# [flexiblegs-scss](http://flexible.gs)
 
-Flexible Grid System CSS
+Flexible Grid System Scss
 
 ## Install
 
-### [Download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-css/master/flexiblegs.css)
-```html
-<head>
-  <link rel="stylesheet" href="flexiblegs.css">
-</head>
+### [Download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-scss/master/flexiblegs.scss)
+```scss
+$syntax: (
+  css, bem
+);
+$breakpoint: (
+  xl : "",
+  lg : "(max-width: 1024px)",
+  md : "(max-width: 768px)",
+  sm : "(max-width: 667px)"
+);
+$wrap-col:     (auto, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+$wrap-prop:    (table, flexbox, normal, left, center, right, top, middle, bottom, between, around, baseline, reverse, not-reverse);
+$col-row:      (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+$col-prop:     (hidden, not-hidden, first, not-first, last, not-last);
+$wrap-gutter:  (0, 8, 16, 24, 40);
+$wrap-outside: (0, 8, 16, 24, 40);
+$wrap-masonry: (2, 3, 4, 5, 6);
+
+@import "flexiblegs-plus";
+@import "flexiblegs";
 ```
 
 ### [Bower](http://bower.io)
 ```
-$ bower install --save flexiblegs-css
+$ bower install --save flexiblegs-scss
 ```
 
 ## License
