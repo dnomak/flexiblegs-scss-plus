@@ -17,7 +17,8 @@
   "main": "flexiblegs.scss",
   "author": "@dnomak",
   "license": "MIT",
-  "ignore": [
-    "**/.*"
-  ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flexiblegs/flexiblegs-scss.git"
+  }
 }

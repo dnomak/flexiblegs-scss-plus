@@ -27,6 +27,11 @@ $wrap-masonry: (2, 3, 4, 5, 6);
 @import "flexiblegs";
 ```
 
+### [npm](https://www.npmjs.com/package/flexiblegs-scss)
+```
+$ npm install --save flexiblegs-scss
+```
+
 ### [Bower](http://bower.io)
 ```
 $ bower install --save flexiblegs-scss
