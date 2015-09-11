@@ -1,14 +1,7 @@
-/*! Flexible Grid System 5.3.4 | Scss | MIT License | flexible.gs */
+/*! Flexible Grid System 5.4.0 | Scss | MIT License | flexible.gs */
 
 .wrap {
-  display: block;
-  width: 100%;
-  font-size: 0;
-  letter-spacing: 0;
-  text-align: left;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  @include wrap;
 }
 @each $method in $syntax {
   @if $method == "css" {
@@ -282,6 +275,18 @@
                 }
               }
             }
+          }
+        }
+      }
+      @each $item in $col-width {
+        @if $method == "css" {
+          .#{$prop}-width-#{$item} {
+            @include col(width, $val: $item);
+          }
+        }
+        @else if $method == "bem" {
+          .wrap__col--#{$prop}-width-#{$item} {
+            @include col(width, $val: $item);
           }
         }
       }
@@ -621,6 +626,18 @@
                   }
                 }
               }
+            }
+          }
+        }
+        @each $item in $col-width {
+          @if $method == "css" {
+            .#{$prop}-width-#{$item} {
+              @include col(width, $val: $item);
+            }
+          }
+          @else if $method == "bem" {
+            .wrap__col--#{$prop}-width-#{$item} {
+              @include col(width, $val: $item);
             }
           }
         }

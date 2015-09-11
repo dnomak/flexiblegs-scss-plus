@@ -18,6 +18,7 @@ $breakpoint: (
 $wrap-col:     (auto, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
 $wrap-prop:    (table, flexbox, normal, left, center, right, top, middle, bottom, between, around, baseline, reverse, not-reverse);
 $col-row:      (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+$col-width:    ();
 $col-prop:     (hidden, not-hidden, first, not-first, last, not-last);
 $wrap-gutter:  (0, 8, 16, 24, 40);
 $wrap-outside: (0, 8, 16, 24, 40);
