@@ -4,7 +4,7 @@ Flexible Grid System Scss
 
 ## Install
 
-### [Download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-scss/master/flexiblegs-scss.scss) the file and add the project as follows.
+### [Download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-scss/master/flexiblegs-scss.scss)
 ```scss
 $syntax: (
   css, bem
