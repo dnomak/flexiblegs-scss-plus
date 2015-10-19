@@ -4,7 +4,7 @@ Flexible Grid System Scss
 
 ## Install
 
-### [Download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-scss/master/flexiblegs.scss)
+### [Download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-scss/master/flexiblegs-scss.scss) the file and add the project as follows.
 ```scss
 $syntax: (
   css, bem
@@ -24,8 +24,8 @@ $wrap-gutter:  (0, 8, 16, 24, 40);
 $wrap-outside: (0, 8, 16, 24, 40);
 $wrap-masonry: (2, 3, 4, 5, 6);
 
-@import "flexiblegs-plus";
-@import "flexiblegs";
+@import "flexiblegs-scss-plus";
+@import "flexiblegs-scss";
 ```
 
 ### [npm](https://www.npmjs.com/package/flexiblegs-scss)
@@ -33,7 +33,7 @@ $wrap-masonry: (2, 3, 4, 5, 6);
 $ npm install --save flexiblegs-scss
 ```
 
-### [Bower](http://bower.io)
+### [bower](http://bower.io/search/?q=flexiblegs-scss)
 ```
 $ bower install --save flexiblegs-scss
 ```
