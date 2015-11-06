@@ -19,5 +19,8 @@
   "license": "MIT",
   "ignore": [
     "**/.*"
-  ]
+  ],
+  "devDependencies": {
+    "flexiblegs-scss-plus": "~5.4.2"
+  }
 }
