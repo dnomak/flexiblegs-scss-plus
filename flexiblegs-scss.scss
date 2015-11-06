@@ -1,721 +1,367 @@
 /*! Flexible Grid System 5.4.2 | Scss | MIT License | flexible.gs */
 
-.wrap {
-  @include wrap;
-}
-@each $method in $syntax {
-  @if $method == "css" {
-    .col {
-      @include col;
-    }
-  }
-  @else if $method == "bem" {
-    .wrap__col {
-      @include col;
-    }
-  }
-  @each $prop, $val in $breakpoint {
-    @if $val == "" {
-      @each $item in $wrap-col {
+@mixin wrap-col() {
+    @each $item in $wrap-col {
         @if $item == auto {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include wrap($prop: $item);
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap--#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
             }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-#{$item} {
-              @include wrap($prop: $item);
+        } @else {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap--#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
             }
-          }
         }
-        @else {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-        }
-      }
-      @each $item in $wrap-prop {
+    }
+}
+
+@mixin wrap-pop() {
+    @each $item in $wrap-prop {
         @if $item == table {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-        }
-        @else if $item == flexbox {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-        }
-        @else if $item == normal {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-        }
-        @else if $item == left {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-        }
-        @else if $item == center {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-        }
-        @else if $item == right {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-        }
-        @else if $item == top {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-        }
-        @else if $item == middle {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-        }
-        @else if $item == bottom {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-        }
-        @else if $item == between {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-        }
-        @else if $item == around {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-        }
-        @else if $item == baseline {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-        }
-        @else if $item == reverse {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-        }
-        @else if $item == not-reverse {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-#{$item} {
-              @include wrap($prop: $item);
-            }
-          }
-        }
-      }
-      @each $item in $wrap-gutter {
-        @if $method == "css" {
-          .#{$prop}-gutter-#{$item} {
-            @include wrap(gutter, $val: $item);
-          }
-        }
-        @else if $method == "bem" {
-          .wrap--#{$prop}-gutter-#{$item} {
-            @include wrap(gutter, $val: $item);
-          }
-        }
-      }
-      @each $item in $wrap-outside {
-        @if $method == "css" {
-          .#{$prop}-outside-#{$item} {
-            @include wrap(outside, $val: $item);
-          }
-        }
-        @else if $method == "bem" {
-          .wrap--#{$prop}-outside-#{$item} {
-            @include wrap(outside, $val: $item);
-          }
-        }
-      }
-      @each $item in $wrap-masonry {
-        @if $method == "css" {
-          .#{$prop}-masonry-#{$item} {
-            @include wrap(masonry, $val: $item);
-          }
-        }
-        @else if $method == "bem" {
-          .wrap--#{$prop}-masonry-#{$item} {
-            @include wrap(masonry, $val: $item);
-          }
-        }
-      }
-      @each $item in $col-row {
-        @if $item == 1 {
-          @if $method == "css" {
-            .#{$prop}-#{$item}-#{$item} {
-              @include col($prop: $item, $val: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap__col--#{$prop}-#{$item}-#{$item} {
-              @include col($prop: $item, $val: $item);
-            }
-          }
-        }
-        @else {
-          @for $i from 1 through $item {
-            @if $i != $item {
-              @if $method == "css" {
-                .#{$prop}-#{$i}-#{$item} {
-                  @include col($prop: $i, $val: $item);
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
                 }
-              }
-              @else if $method == "bem" {
-                .wrap__col--#{$prop}-#{$i}-#{$item} {
-                  @include col($prop: $i, $val: $item);
+            } @else if $method == "bem" {
+                .wrap--#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
                 }
-              }
             }
-          }
+        } @else if $item == flexbox {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap--#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            }
+        } @else if $item == normal {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap--#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            }
+        } @else if $item == left {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap--#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            }
+        } @else if $item == center {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap--#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            }
+        } @else if $item == right {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap--#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            }
+        } @else if $item == top {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap--#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            }
+        } @else if $item == middle {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap--#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            }
+        } @else if $item == bottom {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap--#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            }
+        } @else if $item == between {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap--#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            }
+        } @else if $item == around {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap--#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            }
+        } @else if $item == baseline {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap--#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            }
+        } @else if $item == reverse {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap--#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            }
+        } @else if $item == not-reverse {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap--#{$prop}-#{$item} {
+                    @include wrap($prop: $item);
+                }
+            }
         }
-      }
-      @each $item in $col-width {
-        @if $method == "css" {
-          .#{$prop}-width-#{$item} {
-            @include col(width, $val: $item);
-          }
-        }
-        @else if $method == "bem" {
-          .wrap__col--#{$prop}-width-#{$item} {
-            @include col(width, $val: $item);
-          }
-        }
-      }
-      @each $item in $col-prop {
-        @if $item == hidden {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include col($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap__col--#{$prop}-#{$item} {
-              @include col($prop: $item);
-            }
-          }
-        }
-        @else if $item == not-hidden {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include col($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap__col--#{$prop}-#{$item} {
-              @include col($prop: $item);
-            }
-          }
-        }
-        @else if $item == first {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include col($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap__col--#{$prop}-#{$item} {
-              @include col($prop: $item);
-            }
-          }
-        }
-        @else if $item == not-first {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include col($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap__col--#{$prop}-#{$item} {
-              @include col($prop: $item);
-            }
-          }
-        }
-        @else if $item == last {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include col($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap__col--#{$prop}-#{$item} {
-              @include col($prop: $item);
-            }
-          }
-        }
-        @else if $item == not-last {
-          @if $method == "css" {
-            .#{$prop}-#{$item} {
-              @include col($prop: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap__col--#{$prop}-#{$item} {
-              @include col($prop: $item);
-            }
-          }
-        }
-      }
     }
-    @else if $val != "" {
-      @media #{$val} {
-        @each $item in $wrap-col {
-          @if $item == auto {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap--#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-          }
-          @else {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap--#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-          }
-        }
-        @each $item in $wrap-prop {
-          @if $item == table {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap--#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-          }
-          @else if $item == flexbox {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap--#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-          }
-          @else if $item == normal {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap--#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-          }
-          @else if $item == left {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap--#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-          }
-          @else if $item == center {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap--#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-          }
-          @else if $item == right {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap--#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-          }
-          @else if $item == top {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap--#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-          }
-          @else if $item == middle {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap--#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-          }
-          @else if $item == bottom {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap--#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-          }
-          @else if $item == between {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap--#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-          }
-          @else if $item == around {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap--#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-          }
-          @else if $item == baseline {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap--#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-          }
-          @else if $item == reverse {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap--#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-          }
-          @else if $item == not-reverse {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap--#{$prop}-#{$item} {
-                @include wrap($prop: $item);
-              }
-            }
-          }
-        }
-        @each $item in $wrap-gutter {
-          @if $method == "css" {
+}
+
+@mixin wrap-gutter() {
+    @each $item in $wrap-gutter {
+        @if $method == "css" {
             .#{$prop}-gutter-#{$item} {
-              @include wrap(gutter, $val: $item);
+                @include wrap(gutter, $val: $item);
             }
-          }
-          @else if $method == "bem" {
+        } @else if $method == "bem" {
             .wrap--#{$prop}-gutter-#{$item} {
-              @include wrap(gutter, $val: $item);
+                @include wrap(gutter, $val: $item);
             }
-          }
         }
-        @each $item in $wrap-outside {
-          @if $method == "css" {
-            .#{$prop}-outside-#{$item} {
-              @include wrap(outside, $val: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-outside-#{$item} {
-              @include wrap(outside, $val: $item);
-            }
-          }
-        }
-        @each $item in $wrap-masonry {
-          @if $method == "css" {
-            .#{$prop}-masonry-#{$item} {
-              @include wrap(masonry, $val: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap--#{$prop}-masonry-#{$item} {
-              @include wrap(masonry, $val: $item);
-            }
-          }
-        }
-        @each $item in $col-row {
-          @if $item == 1 {
-            @if $method == "css" {
-              .#{$prop}-#{$item}-#{$item} {
-                @include col($prop: $item, $val: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap__col--#{$prop}-#{$item}-#{$item} {
-                @include col($prop: $item, $val: $item);
-              }
-            }
-          }
-          @else {
-            @for $i from 1 through $item {
-              @if $i != $item {
-                @if $method == "css" {
-                  .#{$prop}-#{$i}-#{$item} {
-                    @include col($prop: $i, $val: $item);
-                  }
-                }
-                @else if $method == "bem" {
-                  .wrap__col--#{$prop}-#{$i}-#{$item} {
-                    @include col($prop: $i, $val: $item);
-                  }
-                }
-              }
-            }
-          }
-        }
-        @each $item in $col-width {
-          @if $method == "css" {
-            .#{$prop}-width-#{$item} {
-              @include col(width, $val: $item);
-            }
-          }
-          @else if $method == "bem" {
-            .wrap__col--#{$prop}-width-#{$item} {
-              @include col(width, $val: $item);
-            }
-          }
-        }
-        @each $item in $col-prop {
-          @if $item == hidden {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include col($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap__col--#{$prop}-#{$item} {
-                @include col($prop: $item);
-              }
-            }
-          }
-          @else if $item == not-hidden {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include col($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap__col--#{$prop}-#{$item} {
-                @include col($prop: $item);
-              }
-            }
-          }
-          @else if $item == first {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include col($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap__col--#{$prop}-#{$item} {
-                @include col($prop: $item);
-              }
-            }
-          }
-          @else if $item == not-first {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include col($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap__col--#{$prop}-#{$item} {
-                @include col($prop: $item);
-              }
-            }
-          }
-          @else if $item == last {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include col($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap__col--#{$prop}-#{$item} {
-                @include col($prop: $item);
-              }
-            }
-          }
-          @else if $item == not-last {
-            @if $method == "css" {
-              .#{$prop}-#{$item} {
-                @include col($prop: $item);
-              }
-            }
-            @else if $method == "bem" {
-              .wrap__col--#{$prop}-#{$item} {
-                @include col($prop: $item);
-              }
-            }
-          }
-        }
-      }
     }
-  }
+}
+
+@mixin wrap-outside() {
+    @each $item in $wrap-outside {
+        @if $method == "css" {
+            .#{$prop}-outside-#{$item} {
+                @include wrap(outside, $val: $item);
+            }
+        } @else if $method == "bem" {
+            .wrap--#{$prop}-outside-#{$item} {
+                @include wrap(outside, $val: $item);
+            }
+        }
+    }
+}
+
+@mixin wrap-masonry {
+    @each $item in $wrap-masonry {
+        @if $method == "css" {
+            .#{$prop}-masonry-#{$item} {
+                @include wrap(masonry, $val: $item);
+            }
+        } @else if $method == "bem" {
+            .wrap--#{$prop}-masonry-#{$item} {
+                @include wrap(masonry, $val: $item);
+            }
+        }
+    }
+}
+
+@mixin col-row() {
+    @each $item in $col-row {
+        @if $item == 1 {
+            @if $method == "css" {
+                .#{$prop}-#{$item}-#{$item} {
+                    @include col($prop: $item, $val: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap__col--#{$prop}-#{$item}-#{$item} {
+                    @include col($prop: $item, $val: $item);
+                }
+            }
+        } @else {
+            @for $i from 1 through $item {
+                @if $i != $item {
+                    @if $method == "css" {
+                        .#{$prop}-#{$i}-#{$item} {
+                            @include col($prop: $i, $val: $item);
+                        }
+                    } @else if $method == "bem" {
+                        .wrap__col--#{$prop}-#{$i}-#{$item} {
+                            @include col($prop: $i, $val: $item);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin col-width() {
+    @each $item in $col-width {
+        @if $method == "css" {
+            .#{$prop}-width-#{$item} {
+                @include col(width, $val: $item);
+            }
+        } @else if $method == "bem" {
+            .wrap__col--#{$prop}-width-#{$item} {
+                @include col(width, $val: $item);
+            }
+        }
+    }
+}
+
+@mixin col-prop() {
+    @each $item in $col-prop {
+        @if $item == hidden {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include col($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap__col--#{$prop}-#{$item} {
+                    @include col($prop: $item);
+                }
+            }
+        } @else if $item == not-hidden {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include col($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap__col--#{$prop}-#{$item} {
+                    @include col($prop: $item);
+                }
+            }
+        } @else if $item == first {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include col($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap__col--#{$prop}-#{$item} {
+                    @include col($prop: $item);
+                }
+            }
+        } @else if $item == not-first {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include col($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap__col--#{$prop}-#{$item} {
+                    @include col($prop: $item);
+                }
+            }
+        } @else if $item == last {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include col($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap__col--#{$prop}-#{$item} {
+                    @include col($prop: $item);
+                }
+            }
+        } @else if $item == not-last {
+            @if $method == "css" {
+                .#{$prop}-#{$item} {
+                    @include col($prop: $item);
+                }
+            } @else if $method == "bem" {
+                .wrap__col--#{$prop}-#{$item} {
+                    @include col($prop: $item);
+                }
+            }
+        }
+    }
+}
+
+.wrap {
+    @include wrap;
+}
+
+@each $method in $syntax {
+    @if $method == "css" {
+        .col {
+            @include col;
+        }
+    } @else if $method == "bem" {
+        .wrap__col {
+            @include col;
+        }
+    }
+    @each $prop, $val in $breakpoint {
+        @if $val == "" {
+            @include wrap-col();
+            @include wrap-pop();
+            @include wrap-gutter();
+            @include wrap-outside();
+            @include wrap-masonry();
+
+            @include col-row();
+            @include col-width();
+            @include col-prop();
+
+        } @else {
+            @media #{$val} {
+                @include wrap-col();
+                @include wrap-pop();
+                @include wrap-gutter();
+                @include wrap-outside();
+                @include wrap-masonry();
+
+                @include col-row();
+                @include col-width();
+                @include col-prop();
+            }
+        }
+    }
 }
