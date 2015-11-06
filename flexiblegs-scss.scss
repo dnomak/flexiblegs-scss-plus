@@ -1,28 +1,28 @@
 /*! Flexible Grid System 5.4.2 | Scss | MIT License | flexible.gs */
 
 @mixin wrap-col() {
-  @each $item in $wrap-col {
-    @if $item=="auto" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+  @each $wrap-col-val in $wrap-col {
+    @if $wrap-col-val=="auto" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$wrap-col-val} {
+          @include wrap($prop: $wrap-col-val);
         }
       }
-      @else if $method=="bem" {
-        .wrap--#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-col-val} {
+          @include wrap($prop: $wrap-col-val);
         }
       }
     }
     @else {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$wrap-col-val} {
+          @include wrap($prop: $wrap-col-val);
         }
       }
-      @else if $method=="bem" {
-        .wrap--#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-col-val} {
+          @include wrap($prop: $wrap-col-val);
         }
       }
     }
@@ -30,172 +30,172 @@
 }
 
 @mixin wrap-prop() {
-  @each $item in $wrap-prop {
-    @if $item=="table" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+  @each $wrap-prop-val in $wrap-prop {
+    @if $wrap-prop-val=="table" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
         }
       }
-      @else if $method=="bem" {
-        .wrap--#{$prop}-#{$item} {
-          @include wrap($prop: $item);
-        }
-      }
-    }
-    @else if $item=="flexbox" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include wrap($prop: $item);
-        }
-      }
-      @else if $method=="bem" {
-        .wrap--#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
         }
       }
     }
-    @else if $item=="normal" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+    @else if $wrap-prop-val=="flexbox" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
         }
       }
-      @else if $method=="bem" {
-        .wrap--#{$prop}-#{$item} {
-          @include wrap($prop: $item);
-        }
-      }
-    }
-    @else if $item=="left" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include wrap($prop: $item);
-        }
-      }
-      @else if $method=="bem" {
-        .wrap--#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
         }
       }
     }
-    @else if $item=="center" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+    @else if $wrap-prop-val=="normal" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
         }
       }
-      @else if $method=="bem" {
-        .wrap--#{$prop}-#{$item} {
-          @include wrap($prop: $item);
-        }
-      }
-    }
-    @else if $item=="right" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include wrap($prop: $item);
-        }
-      }
-      @else if $method=="bem" {
-        .wrap--#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
         }
       }
     }
-    @else if $item=="top" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+    @else if $wrap-prop-val=="left" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
         }
       }
-      @else if $method=="bem" {
-        .wrap--#{$prop}-#{$item} {
-          @include wrap($prop: $item);
-        }
-      }
-    }
-    @else if $item=="middle" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include wrap($prop: $item);
-        }
-      }
-      @else if $method=="bem" {
-        .wrap--#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
         }
       }
     }
-    @else if $item=="bottom" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+    @else if $wrap-prop-val=="center" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
         }
       }
-      @else if $method=="bem" {
-        .wrap--#{$prop}-#{$item} {
-          @include wrap($prop: $item);
-        }
-      }
-    }
-    @else if $item=="between" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include wrap($prop: $item);
-        }
-      }
-      @else if $method=="bem" {
-        .wrap--#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
         }
       }
     }
-    @else if $item=="around" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+    @else if $wrap-prop-val=="right" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
         }
       }
-      @else if $method=="bem" {
-        .wrap--#{$prop}-#{$item} {
-          @include wrap($prop: $item);
-        }
-      }
-    }
-    @else if $item=="baseline" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include wrap($prop: $item);
-        }
-      }
-      @else if $method=="bem" {
-        .wrap--#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
         }
       }
     }
-    @else if $item=="reverse" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+    @else if $wrap-prop-val=="top" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
         }
       }
-      @else if $method=="bem" {
-        .wrap--#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
         }
       }
     }
-    @else if $item=="not-reverse" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+    @else if $wrap-prop-val=="middle" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
         }
       }
-      @else if $method=="bem" {
-        .wrap--#{$prop}-#{$item} {
-          @include wrap($prop: $item);
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
+        }
+      }
+    }
+    @else if $wrap-prop-val=="bottom" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
+        }
+      }
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
+        }
+      }
+    }
+    @else if $wrap-prop-val=="between" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
+        }
+      }
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
+        }
+      }
+    }
+    @else if $wrap-prop-val=="around" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
+        }
+      }
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
+        }
+      }
+    }
+    @else if $wrap-prop-val=="baseline" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
+        }
+      }
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
+        }
+      }
+    }
+    @else if $wrap-prop-val=="reverse" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
+        }
+      }
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
+        }
+      }
+    }
+    @else if $wrap-prop-val=="not-reverse" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
+        }
+      }
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+          @include wrap($prop: $wrap-prop-val);
         }
       }
     }
@@ -203,30 +203,30 @@
 }
 
 @mixin col-row() {
-  @each $item in $col-row {
-    @if $item==1 {
-      @if $method=="css" {
-        .#{$prop}-#{$item}-#{$item} {
-          @include col($prop: $item, $val: $item);
+  @each $col-row-val in $col-row {
+    @if $col-row-val==1 {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$col-row-val}-#{$col-row-val} {
+          @include col($prop: $col-row-val, $val: $col-row-val);
         }
       }
-      @else if $method=="bem" {
-        .wrap__col--#{$prop}-#{$item}-#{$item} {
-          @include col($prop: $item, $val: $item);
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap__col--#{$flexiblegs-breakpoint-key}-#{$col-row-val}-#{$col-row-val} {
+          @include col($prop: $col-row-val, $val: $col-row-val);
         }
       }
     }
     @else {
-      @for $i from 1 through $item {
-        @if $i !=$item {
-          @if $method=="css" {
-            .#{$prop}-#{$i}-#{$item} {
-              @include col($prop: $i, $val: $item);
+      @for $i from 1 through $col-row-val {
+        @if $i !=$col-row-val {
+          @if $flexiblegs-method-val=="css" {
+            .#{$flexiblegs-breakpoint-key}-#{$i}-#{$col-row-val} {
+              @include col($prop: $i, $val: $col-row-val);
             }
           }
-          @else if $method=="bem" {
-            .wrap__col--#{$prop}-#{$i}-#{$item} {
-              @include col($prop: $i, $val: $item);
+          @else if $flexiblegs-method-val=="bem" {
+            .wrap__col--#{$flexiblegs-breakpoint-key}-#{$i}-#{$col-row-val} {
+              @include col($prop: $i, $val: $col-row-val);
             }
           }
         }
@@ -236,91 +236,91 @@
 }
 
 @mixin col-width() {
-  @each $item in $col-width {
-    @if $method=="css" {
-      .#{$prop}-width-#{$item} {
-        @include col(width, $val: $item);
+  @each $col-width-val in $col-width {
+    @if $flexiblegs-method-val=="css" {
+      .#{$flexiblegs-breakpoint-key}-width-#{$col-width-val} {
+        @include col(width, $val: $col-width-val);
       }
     }
-    @else if $method=="bem" {
-      .wrap__col--#{$prop}-width-#{$item} {
-        @include col(width, $val: $item);
+    @else if $flexiblegs-method-val=="bem" {
+      .wrap__col--#{$flexiblegs-breakpoint-key}-width-#{$col-width-val} {
+        @include col(width, $val: $col-width-val);
       }
     }
   }
 }
 
 @mixin col-prop() {
-  @each $item in $col-prop {
-    @if $item=="hidden" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include col($prop: $item);
+  @each $col-prop-val in $col-prop {
+    @if $col-prop-val=="hidden" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$col-prop-val} {
+          @include col($prop: $col-prop-val);
         }
       }
-      @else if $method=="bem" {
-        .wrap__col--#{$prop}-#{$item} {
-          @include col($prop: $item);
-        }
-      }
-    }
-    @else if $item=="not-hidden" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include col($prop: $item);
-        }
-      }
-      @else if $method=="bem" {
-        .wrap__col--#{$prop}-#{$item} {
-          @include col($prop: $item);
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap__col--#{$flexiblegs-breakpoint-key}-#{$col-prop-val} {
+          @include col($prop: $col-prop-val);
         }
       }
     }
-    @else if $item=="first" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include col($prop: $item);
+    @else if $col-prop-val=="not-hidden" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$col-prop-val} {
+          @include col($prop: $col-prop-val);
         }
       }
-      @else if $method=="bem" {
-        .wrap__col--#{$prop}-#{$item} {
-          @include col($prop: $item);
-        }
-      }
-    }
-    @else if $item=="not-first" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include col($prop: $item);
-        }
-      }
-      @else if $method=="bem" {
-        .wrap__col--#{$prop}-#{$item} {
-          @include col($prop: $item);
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap__col--#{$flexiblegs-breakpoint-key}-#{$col-prop-val} {
+          @include col($prop: $col-prop-val);
         }
       }
     }
-    @else if $item=="last" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include col($prop: $item);
+    @else if $col-prop-val=="first" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$col-prop-val} {
+          @include col($prop: $col-prop-val);
         }
       }
-      @else if $method=="bem" {
-        .wrap__col--#{$prop}-#{$item} {
-          @include col($prop: $item);
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap__col--#{$flexiblegs-breakpoint-key}-#{$col-prop-val} {
+          @include col($prop: $col-prop-val);
         }
       }
     }
-    @else if $item=="not-last" {
-      @if $method=="css" {
-        .#{$prop}-#{$item} {
-          @include col($prop: $item);
+    @else if $col-prop-val=="not-first" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$col-prop-val} {
+          @include col($prop: $col-prop-val);
         }
       }
-      @else if $method=="bem" {
-        .wrap__col--#{$prop}-#{$item} {
-          @include col($prop: $item);
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap__col--#{$flexiblegs-breakpoint-key}-#{$col-prop-val} {
+          @include col($prop: $col-prop-val);
+        }
+      }
+    }
+    @else if $col-prop-val=="last" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$col-prop-val} {
+          @include col($prop: $col-prop-val);
+        }
+      }
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap__col--#{$flexiblegs-breakpoint-key}-#{$col-prop-val} {
+          @include col($prop: $col-prop-val);
+        }
+      }
+    }
+    @else if $col-prop-val=="not-last" {
+      @if $flexiblegs-method-val=="css" {
+        .#{$flexiblegs-breakpoint-key}-#{$col-prop-val} {
+          @include col($prop: $col-prop-val);
+        }
+      }
+      @else if $flexiblegs-method-val=="bem" {
+        .wrap__col--#{$flexiblegs-breakpoint-key}-#{$col-prop-val} {
+          @include col($prop: $col-prop-val);
         }
       }
     }
@@ -328,45 +328,45 @@
 }
 
 @mixin wrap-gutter() {
-  @each $item in $wrap-gutter {
-    @if $method=="css" {
-      .#{$prop}-gutter-#{$item} {
-        @include wrap(gutter, $val: $item);
+  @each $wrap-gutter-val in $wrap-gutter {
+    @if $flexiblegs-method-val=="css" {
+      .#{$flexiblegs-breakpoint-key}-gutter-#{$wrap-gutter-val} {
+        @include wrap(gutter, $val: $wrap-gutter-val);
       }
     }
-    @else if $method=="bem" {
-      .wrap--#{$prop}-gutter-#{$item} {
-        @include wrap(gutter, $val: $item);
+    @else if $flexiblegs-method-val=="bem" {
+      .wrap--#{$flexiblegs-breakpoint-key}-gutter-#{$wrap-gutter-val} {
+        @include wrap(gutter, $val: $wrap-gutter-val);
       }
     }
   }
 }
 
 @mixin wrap-outside() {
-  @each $item in $wrap-outside {
-    @if $method=="css" {
-      .#{$prop}-outside-#{$item} {
-        @include wrap(outside, $val: $item);
+  @each $wrap-outside-val in $wrap-outside {
+    @if $flexiblegs-method-val=="css" {
+      .#{$flexiblegs-breakpoint-key}-outside-#{$wrap-outside-val} {
+        @include wrap(outside, $val: $wrap-outside-val);
       }
     }
-    @else if $method=="bem" {
-      .wrap--#{$prop}-outside-#{$item} {
-        @include wrap(outside, $val: $item);
+    @else if $flexiblegs-method-val=="bem" {
+      .wrap--#{$flexiblegs-breakpoint-key}-outside-#{$wrap-outside-val} {
+        @include wrap(outside, $val: $wrap-outside-val);
       }
     }
   }
 }
 
 @mixin wrap-masonry {
-  @each $item in $wrap-masonry {
-    @if $method=="css" {
-      .#{$prop}-masonry-#{$item} {
-        @include wrap(masonry, $val: $item);
+  @each $wrap-masonry-val in $wrap-masonry {
+    @if $flexiblegs-method-val=="css" {
+      .#{$flexiblegs-breakpoint-key}-masonry-#{$wrap-masonry-val} {
+        @include wrap(masonry, $val: $wrap-masonry-val);
       }
     }
-    @else if $method=="bem" {
-      .wrap--#{$prop}-masonry-#{$item} {
-        @include wrap(masonry, $val: $item);
+    @else if $flexiblegs-method-val=="bem" {
+      .wrap--#{$flexiblegs-breakpoint-key}-masonry-#{$wrap-masonry-val} {
+        @include wrap(masonry, $val: $wrap-masonry-val);
       }
     }
   }
@@ -376,20 +376,19 @@
   @include wrap;
 }
 
-@each $method in $syntax {
-  @if $method=="css" {
+@each $flexiblegs-method-val in $flexiblegs-method {
+  @if $flexiblegs-method-val=="css" {
     .col {
       @include col;
     }
   }
-  @else if $method=="bem" {
+  @else if $flexiblegs-method-val=="bem" {
     .wrap__col {
       @include col;
     }
   }
-  @each $prop,
-  $val in $breakpoint {
-    @if $val=="" {
+  @each $flexiblegs-breakpoint-key, $flexiblegs-breakpoint-val in $flexiblegs-breakpoint {
+    @if $flexiblegs-breakpoint-val=="" {
       @include wrap-col();
       @include wrap-prop();
       @include col-row();
@@ -400,7 +399,7 @@
       @include wrap-masonry();
     }
     @else {
-      @media #{$val} {
+      @media #{$flexiblegs-breakpoint-val} {
         @include wrap-col();
         @include wrap-prop();
         @include col-row();

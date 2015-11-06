@@ -1,7 +1,7 @@
-$syntax: (
-  "css"
+$flexiblegs-method: (
+  "css", "bem"
 );
-$breakpoint: (
+$flexiblegs-breakpoint: (
   "xl" : "",
   "lg" : "(max-width: 1024px)",
   "md" : "(max-width: 768px)",
