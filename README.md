@@ -57,7 +57,7 @@ $wrap-masonry: (
   2, 3, 4, 5, 6
 );
 
-@import "bower_components/flexiblegs-scss-plus/flexiblegs-scss-plus";
+@import "flexiblegs-scss";
 @import "flexiblegs-scss-plus";
 ```
 
