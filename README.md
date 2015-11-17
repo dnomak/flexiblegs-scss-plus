@@ -1,13 +1,14 @@
-# [flexiblegs-scss](http://flexible.gs)
+# [flexiblegs-scss-plus](http://flexible.gs)
 
-Flexible Grid System Scss
+Flexible Grid System Scss Plus
 
 ## Install
 
-### [Download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-scss/master/flexiblegs-scss.scss)
+### [Download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-scss-plus/master/flexiblegs-scss-plus.scss)
 ```scss
 $flexiblegs-method: (
-  "css", "bem"
+  "css",
+  "bem"
 );
 $flexiblegs-breakpoint: (
   "xl" : "",
@@ -56,18 +57,18 @@ $wrap-masonry: (
   2, 3, 4, 5, 6
 );
 
+@import "bower_components/flexiblegs-scss-plus/flexiblegs-scss-plus";
 @import "flexiblegs-scss-plus";
-@import "flexiblegs-scss";
 ```
 
-### [npm](https://www.npmjs.com/package/flexiblegs-scss)
+### [npm](https://www.npmjs.com/package/flexiblegs-scss-plus)
 ```
-$ npm install --save flexiblegs-scss
+$ npm install --save flexiblegs-scss-plus
 ```
 
-### [bower](http://bower.io/search/?q=flexiblegs-scss)
+### [bower](http://bower.io/search/?q=flexiblegs-scss-plus)
 ```
-$ bower install --save flexiblegs-scss
+$ bower install --save flexiblegs-scss-plus
 ```
 
 ## License

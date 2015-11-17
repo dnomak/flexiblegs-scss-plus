@@ -1,5 +1,8 @@
+/*! Flexible Grid System 5.5.0 | Settings | Scss | MIT License | flexible.gs */
+
 $flexiblegs-method: (
-  "css", "bem"
+  "css",
+  "bem"
 );
 $flexiblegs-breakpoint: (
   "xl" : "",
@@ -48,5 +51,5 @@ $wrap-masonry: (
   2, 3, 4, 5, 6
 );
 
-@import "bower_components/flexiblegs-scss-plus/flexiblegs-scss-plus";
-@import "flexiblegs-scss";
+@import "bower_components/flexiblegs-scss/flexiblegs-scss";
+@import "flexiblegs-scss-plus";

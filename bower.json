@@ -1,8 +1,8 @@
 {
-  "name": "flexiblegs-scss",
-  "version": "5.4.2",
+  "name": "flexiblegs-scss-plus",
+  "version": "5.5.0",
   "homepage": "http://flexible.gs",
-  "description": "Flexible Grid System Scss",
+  "description": "Flexible Grid System Scss Plus",
   "keywords": [
     "css",
     "sass",
@@ -14,13 +14,13 @@
     "flexbox",
     "flex"
   ],
-  "main": "flexiblegs-scss.scss",
+  "main": "flexiblegs-scss-plus.scss",
   "author": "@dnomak",
   "license": "MIT",
   "ignore": [
     "**/.*"
   ],
   "devDependencies": {
-    "flexiblegs-scss-plus": "~5.4.2"
+    "flexiblegs-scss": "~5.5.0"
   }
 }

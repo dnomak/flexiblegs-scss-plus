@@ -1,6 +1,4 @@
-/**
- * @author Bilal Cinarli
- */
+// @author Bilal Cinarli
 
 'use strict';
 
@@ -12,7 +10,7 @@ var gulp = require('gulp'),
 
 var tasks = {
   sass: function () {
-    return gulp.src('settings.scss')
+    return gulp.src('flexiblegs-settings.scss')
       .pipe(sass({
         outputStyle: 'expanded'
       }))

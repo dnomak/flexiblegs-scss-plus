@@ -1,4 +1,4 @@
-/*! Flexible Grid System 5.4.2 | Scss | MIT License | flexible.gs */
+/*! Flexible Grid System 5.5.0 | Scss Plus | MIT License | flexible.gs */
 
 @mixin wrap-col() {
   @each $wrap-col-val in $wrap-col {
@@ -239,12 +239,12 @@
   @each $col-width-val in $col-width {
     @if $flexiblegs-method-val=="css" {
       .#{$flexiblegs-breakpoint-key}-width-#{$col-width-val} {
-        @include col(width, $val: $col-width-val);
+        @include col("width", $val: $col-width-val);
       }
     }
     @else if $flexiblegs-method-val=="bem" {
       .wrap__col--#{$flexiblegs-breakpoint-key}-width-#{$col-width-val} {
-        @include col(width, $val: $col-width-val);
+        @include col("width", $val: $col-width-val);
       }
     }
   }
@@ -331,12 +331,12 @@
   @each $wrap-gutter-val in $wrap-gutter {
     @if $flexiblegs-method-val=="css" {
       .#{$flexiblegs-breakpoint-key}-gutter-#{$wrap-gutter-val} {
-        @include wrap(gutter, $val: $wrap-gutter-val);
+        @include wrap("gutter", $val: $wrap-gutter-val);
       }
     }
     @else if $flexiblegs-method-val=="bem" {
       .wrap--#{$flexiblegs-breakpoint-key}-gutter-#{$wrap-gutter-val} {
-        @include wrap(gutter, $val: $wrap-gutter-val);
+        @include wrap("gutter", $val: $wrap-gutter-val);
       }
     }
   }
@@ -346,12 +346,12 @@
   @each $wrap-outside-val in $wrap-outside {
     @if $flexiblegs-method-val=="css" {
       .#{$flexiblegs-breakpoint-key}-outside-#{$wrap-outside-val} {
-        @include wrap(outside, $val: $wrap-outside-val);
+        @include wrap("outside", $val: $wrap-outside-val);
       }
     }
     @else if $flexiblegs-method-val=="bem" {
       .wrap--#{$flexiblegs-breakpoint-key}-outside-#{$wrap-outside-val} {
-        @include wrap(outside, $val: $wrap-outside-val);
+        @include wrap("outside", $val: $wrap-outside-val);
       }
     }
   }
@@ -361,12 +361,12 @@
   @each $wrap-masonry-val in $wrap-masonry {
     @if $flexiblegs-method-val=="css" {
       .#{$flexiblegs-breakpoint-key}-masonry-#{$wrap-masonry-val} {
-        @include wrap(masonry, $val: $wrap-masonry-val);
+        @include wrap("masonry", $val: $wrap-masonry-val);
       }
     }
     @else if $flexiblegs-method-val=="bem" {
       .wrap--#{$flexiblegs-breakpoint-key}-masonry-#{$wrap-masonry-val} {
-        @include wrap(masonry, $val: $wrap-masonry-val);
+        @include wrap("masonry", $val: $wrap-masonry-val);
       }
     }
   }
