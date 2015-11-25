@@ -71,6 +71,13 @@ $ npm install --save flexiblegs-scss-plus
 $ bower install --save flexiblegs-scss-plus
 ```
 
+## Contributing
+1. Fork it ( https://github.com/flexiblegs/flexiblegs-scss-plus/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
+
 ## License
 - Flexible Grid System is licensed under the MIT license.
   - [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)
