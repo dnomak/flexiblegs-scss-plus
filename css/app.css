@@ -1,5 +1,5 @@
 /*! Flexible Grid System 5.5.2 | Settings | Scss | MIT License | flexible.gs */
-/*! Flexible Grid System 5.5.1 | Scss | MIT License | flexible.gs */
+/*! Flexible Grid System 5.5.2 | Scss | MIT License | flexible.gs */
 /*! Flexible Grid System 5.5.2 | Scss Plus | MIT License | flexible.gs */
 .wrap {
   display: block;
@@ -19,7 +19,6 @@
 .col {
   min-height: 1px;
   font-size: 1rem;
-  vertical-align: middle;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2311,7 +2310,6 @@
 .wrap__col {
   min-height: 1px;
   font-size: 1rem;
-  vertical-align: middle;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
