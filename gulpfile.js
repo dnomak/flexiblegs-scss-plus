@@ -1,40 +1,30 @@
-// @author Bilal Cinarli
-
 'use strict';
 
 var gulp = require('gulp'),
-  pkg = require('./package.json'),
-  sass = require('gulp-sass'),
-  csslint = require('gulp-csslint'),
-  rename = require('gulp-rename');
+    sass = require('gulp-sass'),
+    rename = require('gulp-rename'),
+    notify = require('gulp-notify');
 
-var tasks = {
-  sass: function () {
-    return gulp.src('flexiblegs-settings.scss')
-      .pipe(sass({
-        outputStyle: 'expanded'
-      }))
-      .pipe(rename(pkg.name + '.css'))
-      .pipe(gulp.dest('build'));
-  },
-  csslint: function () {
-    return gulp.src('build/' + pkg.name + '.css')
-      .pipe(csslint())
-      .pipe(csslint.reporter());
-  }
-};
+function handleErrors() {
+  var args = Array.prototype.slice.call(arguments);
+  notify.onError({
+    title: 'Compile Error',
+    message: '<%= error.message %>'
+  }).apply(this, args);
+  this.emit('end');
+}
 
-gulp.task('sass', tasks.sass);
-
-gulp.task('styles', ['sass'], function () {
-  return tasks.csslint();
+gulp.task('scss',function() {
+  gulp.src('scss/app.scss')
+    .pipe(sass({outputStyle: 'expanded'}).on('error', handleErrors))
+    .pipe(rename('app.css'))
+    // .pipe(sass({outputStyle: 'compressed'}).on('error', handleErrors))
+    // .pipe(rename('app.min.css'))
+    .pipe(gulp.dest('css'))
 });
 
-gulp.task('watch', ['styles'], function () {
-  // --------------------------
-  // watch:sass
-  // --------------------------
-  gulp.watch('**/*.scss', ['styles']);
+gulp.task('watch', ['scss'], function () {
+  gulp.watch('scss/**/*', ['scss']);
 });
 
 gulp.task('default', ['watch']);

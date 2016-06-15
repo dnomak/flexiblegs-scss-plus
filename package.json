@@ -1,6 +1,6 @@
 {
   "name": "flexiblegs-scss-plus",
-  "version": "5.5.1",
+  "version": "5.5.2",
   "homepage": "http://flexible.gs",
   "description": "Flexible Grid System Scss Plus",
   "keywords": [
@@ -14,7 +14,7 @@
     "flexbox",
     "flex"
   ],
-  "main": "flexiblegs-scss-plus.scss",
+  "main": "scss/helper/flexiblegs-scss-plus.scss",
   "author": "@dnomak",
   "license": "MIT",
   "repository": {
@@ -22,9 +22,12 @@
     "url": "git+https://github.com/flexiblegs/flexiblegs-scss-plus.git"
   },
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-csslint": "^0.2.0",
+    "gulp": "^3.9.1",
+    "gulp-notify": "^2.2.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.0"
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "build": "npm install && bower install && gulp"
   }
 }
