@@ -3,16 +3,16 @@
 $flexiblegs-method: (
   "css",
   "bem"
-);
+) !default;
 $flexiblegs-breakpoint: (
   "xl" : "",
   "lg" : "(max-width: 1024px)",
   "md" : "(max-width: 768px)",
   "sm" : "(max-width: 667px)"
-);
+) !default;
 $wrap-col: (
   "auto", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-);
+) !default;
 $wrap-prop: (
   "table",
   "flexbox",
@@ -28,11 +28,11 @@ $wrap-prop: (
   "baseline",
   "reverse",
   "not-reverse"
-);
+) !default;
 $col-row: (
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
-);
-$col-width: ();
+) !default;
+$col-width: () !default;
 $col-prop: (
   "hidden",
   "not-hidden",
@@ -40,13 +40,13 @@ $col-prop: (
   "not-first",
   "last",
   "not-last"
-);
+) !default;
 $wrap-gutter: (
   0, 8, 16, 24, 40
-);
+) !default;
 $wrap-outside: (
   0, 8, 16, 24, 40
-);
+) !default;
 $wrap-masonry: (
   2, 3, 4, 5, 6
-);
+) !default;
