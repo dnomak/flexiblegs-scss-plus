@@ -1,6 +1,6 @@
 {
   "name": "flexiblegs-scss-plus",
-  "version": "5.5.2",
+  "version": "5.5.3",
   "homepage": "http://flexible.gs",
   "description": "Flexible Grid System Scss Plus",
   "keywords": [
@@ -21,6 +21,6 @@
     "**/.*"
   ],
   "devDependencies": {
-    "flexiblegs-scss": "~5.5.2"
+    "flexiblegs-scss": "~5.5.3"
   }
 }

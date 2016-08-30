@@ -1,6 +1,6 @@
-/*! Flexible Grid System 5.5.2 | Settings | Scss | MIT License | flexible.gs */
-/*! Flexible Grid System 5.5.2 | Scss | MIT License | flexible.gs */
-/*! Flexible Grid System 5.5.2 | Scss Plus | MIT License | flexible.gs */
+/*! Flexible Grid System 5.5.3 | Settings | Scss | MIT License | flexible.gs */
+/*! Flexible Grid System 5.5.3 | Scss | MIT License | flexible.gs */
+/*! Flexible Grid System 5.5.3 | Scss Plus | MIT License | flexible.gs */
 .wrap {
   display: block;
   width: 100%;
@@ -14,6 +14,7 @@
 
 .wrap > * {
   display: inline-block;
+  vertical-align: top;
 }
 
 .col {
