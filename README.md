@@ -71,6 +71,11 @@ $ npm install --save flexiblegs-scss-plus
 $ bower install --save flexiblegs-scss-plus
 ```
 
+### [yarn](https://yarnpkg.com/en/package/flexiblegs-scss-plus)
+```
+$ yarn add flexiblegs-scss-plus
+```
+
 ## Contributing
 1. Fork it ( https://github.com/flexiblegs/flexiblegs-scss-plus/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
