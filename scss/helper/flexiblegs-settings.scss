@@ -32,7 +32,68 @@ $wrap-prop: (
 $col-row: (
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
 );
-$col-width: ();
+$custom-sizeables: (
+
+	// Single CSS
+	"width" : (
+		(25, 50, 100) : (
+			"width" : %,
+		)
+	),
+	"height" : (
+		(100, 300, 500) : (
+			"height" : px,
+		)
+	),
+
+
+	"fsize" : (
+		(14, 19, 22) : (
+			"font-size" : px
+		)
+	),
+
+	// With value shortcuts
+	"fontsize" : (
+		(
+			"small"  : "0.7",
+			"medium" : "1",
+			"large"  : "1.5"
+		) : (
+			"font-size" : em
+		)
+	),
+
+
+	// Without value suffix
+	"fontweight" : (
+		(normal, bold, 900) : (
+			"font-weight"
+		)
+	),
+
+	"align" : (
+		(left, right, center, justify) : (
+			"text-align",
+		)
+	),
+
+
+	// With multiple CSS
+	"paddingx" : (
+		(0, 8, 16) : (
+			"padding-left" : px,
+			"padding-right" : px
+		)
+	),
+	"marginy" : (
+		(0, 8, 16) : (
+			"margin-top" : px,
+			"margin-bottom" : px
+		)
+	)
+
+);
 $col-prop: (
   "hidden",
   "not-hidden",

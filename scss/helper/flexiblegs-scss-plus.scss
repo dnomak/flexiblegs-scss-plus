@@ -243,18 +243,18 @@
           }
         }
       }
-      @each $col-width-val in $col-width {
-        @if $flexiblegs-method-val=="css" {
-          .#{$flexiblegs-breakpoint-key}-width-#{$col-width-val} {
-            @include col("width", $val: $col-width-val);
+	  @each $shortcut, $custom-css-info in $custom-sizeables {
+        @each $values, $custom-csses in $custom-css-info {
+          @each $name, $value in $values {
+		  	@if not $value { $value: $name; }
+            .#{$flexiblegs-breakpoint-key}-#{$shortcut}-#{$name} {
+              @each $custom-css, $suffix in $custom-csses {
+                #{$custom-css}: #{$value}#{$suffix};
+              }
+            }
           }
         }
-        @else if $flexiblegs-method-val=="bem" {
-          .wrap__col--#{$flexiblegs-breakpoint-key}-width-#{$col-width-val} {
-            @include col("width", $val: $col-width-val);
-          }
-        }
-      }
+	  }
       @each $col-prop-val in $col-prop {
         @if $col-prop-val=="hidden" {
           @if $flexiblegs-method-val=="css" {
@@ -594,18 +594,18 @@
             }
           }
         }
-        @each $col-width-val in $col-width {
-          @if $flexiblegs-method-val=="css" {
-            .#{$flexiblegs-breakpoint-key}-width-#{$col-width-val} {
-              @include col("width", $val: $col-width-val);
+	    @each $shortcut, $custom-css-info in $custom-sizeables {
+          @each $values, $custom-csses in $custom-css-info {
+            @each $name, $value in $values {
+	    	  	@if not $value { $value: $name; }
+              .#{$flexiblegs-breakpoint-key}-#{$shortcut}-#{$name} {
+                @each $custom-css, $suffix in $custom-csses {
+                  #{$custom-css}: #{$value}#{$suffix};
+                }
+              }
             }
           }
-          @else if $flexiblegs-method-val=="bem" {
-            .wrap__col--#{$flexiblegs-breakpoint-key}-width-#{$col-width-val} {
-              @include col("width", $val: $col-width-val);
-            }
-          }
-        }
+	    }
         @each $col-prop-val in $col-prop {
           @if $col-prop-val=="hidden" {
             @if $flexiblegs-method-val=="css" {
