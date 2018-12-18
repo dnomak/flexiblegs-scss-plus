@@ -1,33 +1,29 @@
 {
   "name": "flexiblegs-scss-plus",
-  "version": "5.5.3",
-  "homepage": "http://flexible.gs",
+  "version": "5.6.0",
+  "homepage": "https://dnomak.com/flexiblegs/",
   "description": "Flexible Grid System Scss Plus",
+  "author": "@dnomak <me@dnomak.com>",
+  "license": "MIT",
+  "main": "flexiblegs-scss-plus.scss",
+  "scripts": {
+    "build": "node-sass main.scss flexiblegs-css.css --output-style expanded; node-sass main.scss flexiblegs-css.min.css --output-style compressed"
+  },
   "keywords": [
     "css",
     "sass",
-    "scss",
-    "grid",
-    "responsive",
-    "framework",
-    "flexible",
-    "flexbox",
-    "flex"
+    "scss"
   ],
-  "main": "scss/helper/flexiblegs-scss-plus.scss",
-  "author": "@dnomak",
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/flexiblegs/flexiblegs-scss-plus.git"
   },
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-notify": "^2.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2"
+  "dependencies": {
+    "flexiblegs-scss": "^5.6.0",
+    "node-sass": "^4.11.0"
   },
-  "scripts": {
-    "build": "npm install && bower install && gulp"
+  "engines": {
+    "node": "10.14.1",
+    "npm": "6.5.0"
   }
 }

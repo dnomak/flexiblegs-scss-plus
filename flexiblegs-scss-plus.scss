@@ -1,4 +1,4 @@
-/*! Flexible Grid System 5.5.3 | Scss Plus | MIT License | flexible.gs */
+/*! Flexible Grid System 5.6.0 | Scss Plus | MIT License | dnomak.com/flexiblegs */
 
 .wrap {
   @include wrap;
@@ -141,6 +141,18 @@
           }
         }
         @else if $wrap-prop-val=="bottom" {
+          @if $flexiblegs-method-val=="css" {
+            .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+              @include wrap($prop: $wrap-prop-val);
+            }
+          }
+          @else if $flexiblegs-method-val=="bem" {
+            .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+              @include wrap($prop: $wrap-prop-val);
+            }
+          }
+        }
+        @else if $wrap-prop-val=="stretch" {
           @if $flexiblegs-method-val=="css" {
             .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
               @include wrap($prop: $wrap-prop-val);
@@ -353,18 +365,6 @@
           }
         }
       }
-      @each $wrap-masonry-val in $wrap-masonry {
-        @if $flexiblegs-method-val=="css" {
-          .#{$flexiblegs-breakpoint-key}-masonry-#{$wrap-masonry-val} {
-            @include wrap("masonry", $val: $wrap-masonry-val);
-          }
-        }
-        @else if $flexiblegs-method-val=="bem" {
-          .wrap--#{$flexiblegs-breakpoint-key}-masonry-#{$wrap-masonry-val} {
-            @include wrap("masonry", $val: $wrap-masonry-val);
-          }
-        }
-      }
     }
     @else {
       @media #{$flexiblegs-breakpoint-val} {
@@ -492,6 +492,18 @@
             }
           }
           @else if $wrap-prop-val=="bottom" {
+            @if $flexiblegs-method-val=="css" {
+              .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+                @include wrap($prop: $wrap-prop-val);
+              }
+            }
+            @else if $flexiblegs-method-val=="bem" {
+              .wrap--#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
+                @include wrap($prop: $wrap-prop-val);
+              }
+            }
+          }
+          @else if $wrap-prop-val=="stretch" {
             @if $flexiblegs-method-val=="css" {
               .#{$flexiblegs-breakpoint-key}-#{$wrap-prop-val} {
                 @include wrap($prop: $wrap-prop-val);
@@ -701,18 +713,6 @@
           @else if $flexiblegs-method-val=="bem" {
             .wrap--#{$flexiblegs-breakpoint-key}-outside-#{$wrap-outside-val} {
               @include wrap("outside", $val: $wrap-outside-val);
-            }
-          }
-        }
-        @each $wrap-masonry-val in $wrap-masonry {
-          @if $flexiblegs-method-val=="css" {
-            .#{$flexiblegs-breakpoint-key}-masonry-#{$wrap-masonry-val} {
-              @include wrap("masonry", $val: $wrap-masonry-val);
-            }
-          }
-          @else if $flexiblegs-method-val=="bem" {
-            .wrap--#{$flexiblegs-breakpoint-key}-masonry-#{$wrap-masonry-val} {
-              @include wrap("masonry", $val: $wrap-masonry-val);
             }
           }
         }
