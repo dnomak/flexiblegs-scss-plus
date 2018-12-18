@@ -4,7 +4,7 @@ Flexible Grid System Scss Plus
 
 ## Install
 
-### [Settings download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-scss-plus/flexiblegs-settings.scss)
+### [Settings download](https://raw.githubusercontent.com/flexiblegs/flexiblegs-scss-plus/master/flexiblegs-settings.scss)
 ```scss
 $flexiblegs-method: (
   "css"
