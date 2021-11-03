@@ -73,5 +73,4 @@ $ npm run build
 ```
 
 ## License
-- Flexible Grid System is licensed under the MIT license.
-  - [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT)
+Flexible Grid System is licensed under the [MIT](LICENSE) license.
